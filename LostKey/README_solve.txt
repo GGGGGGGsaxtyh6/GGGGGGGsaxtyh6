@@ -1,0 +1,3 @@
+LostKey: n = 847508536173296595626689
+Key = SHA1(str(n))[:16]
+Flag: HTB{uns4f3_3ll1pt1c_curv3s_l3d_t0_th3_c0ll4ps3_0f_0u7l4nd1s}
