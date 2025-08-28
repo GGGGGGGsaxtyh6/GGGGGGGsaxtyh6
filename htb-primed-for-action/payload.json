@@ -1,0 +1,4 @@
+{
+  "code": "# Función para verificar si un número es primo\ndef es_primo(n):\n    if n < 2:\n        return False\n    if n == 2:\n        return True\n    if n % 2 == 0:\n        return False\n    for i in range(3, int(n**0.5) + 1, 2):\n        if n % i == 0:\n            return False\n    return True\n\n# Leer la entrada\nentrada = input()\n\n# Convertir la entrada en una lista de números enteros\nnumeros = list(map(int, entrada.split()))\n\n# Encontrar todos los números primos en la lista\nprimos = []\nfor num in numeros:\n    if es_primo(num):\n        primos.append(num)\n\n# Multiplicar los dos primos para obtener la clave\nresultado = primos[0] * primos[1]\n\n# Imprimir el resultado\nprint(resultado)",
+  "language": "python"
+}
