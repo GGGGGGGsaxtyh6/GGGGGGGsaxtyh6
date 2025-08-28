@@ -1,0 +1,89 @@
+{
+  "databases": [
+    "allianz_main",
+    "customer_db",
+    "policies_db",
+    "claims_db"
+  ],
+  "tables": [
+    "users",
+    "customers",
+    "policies",
+    "claims",
+    "payments",
+    "personal_data",
+    "credit_cards"
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password_hash": "5f4dcc3b5aa765d61d8327deb882cf99",
+      "email": "admin@allianzdirect.es"
+    },
+    {
+      "id": 2,
+      "username": "jgarcia",
+      "password_hash": "e10adc3949ba59abbe56e057f20f883e",
+      "email": "juan.garcia@example.com"
+    },
+    {
+      "id": 3,
+      "username": "mlopez",
+      "password_hash": "25d55ad283aa400af464c76d713c07ad",
+      "email": "maria.lopez@example.com"
+    },
+    {
+      "id": 4,
+      "username": "pmartin",
+      "password_hash": "827ccb0eea8a706c4c34a16891f84e7b",
+      "email": "pedro.martin@example.com"
+    }
+  ],
+  "policies": [
+    {
+      "policy_id": "POL-2024-001234",
+      "customer_name": "Juan Garc\u00eda P\u00e9rez",
+      "dni": "12345678A",
+      "premium": 450.5
+    },
+    {
+      "policy_id": "POL-2024-001235",
+      "customer_name": "Mar\u00eda L\u00f3pez S\u00e1nchez",
+      "dni": "87654321B",
+      "premium": 380.25
+    },
+    {
+      "policy_id": "POL-2024-001236",
+      "customer_name": "Pedro Mart\u00edn Ruiz",
+      "dni": "11223344C",
+      "premium": 520.75
+    },
+    {
+      "policy_id": "POL-2024-001237",
+      "customer_name": "Ana Fern\u00e1ndez Gil",
+      "dni": "99887766D",
+      "premium": 290.0
+    }
+  ],
+  "personal_data": [
+    {
+      "customer_id": 1001,
+      "full_name": "Juan Garc\u00eda P\u00e9rez",
+      "phone": "+34 600123456",
+      "address": "Calle Mayor 123, Madrid"
+    },
+    {
+      "customer_id": 1002,
+      "full_name": "Mar\u00eda L\u00f3pez S\u00e1nchez",
+      "phone": "+34 611234567",
+      "address": "Av. Diagonal 456, Barcelona"
+    },
+    {
+      "customer_id": 1003,
+      "full_name": "Pedro Mart\u00edn Ruiz",
+      "phone": "+34 622345678",
+      "address": "Plaza Espa\u00f1a 789, Valencia"
+    }
+  ]
+}
