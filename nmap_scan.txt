@@ -1,0 +1,22 @@
+# Nmap 7.95 scan initiated Thu Aug 28 21:28:35 2025 as: nmap -sV -sC -p- --min-rate=1000 -oN nmap_scan.txt www.allianzdirect.es
+Nmap scan report for www.allianzdirect.es (18.165.98.58)
+Host is up (0.0032s latency).
+Other addresses for www.allianzdirect.es (not scanned): 18.165.98.49 18.165.98.84 18.165.98.27
+rDNS record for 18.165.98.58: server-18-165-98-58.iad55.r.cloudfront.net
+Not shown: 65533 filtered tcp ports (no-response)
+PORT    STATE SERVICE  VERSION
+80/tcp  open  http     Amazon CloudFront httpd
+|_http-title: Did not follow redirect to https://www.allianzdirect.es/
+|_http-server-header: CloudFront
+443/tcp open  ssl/http Amazon CloudFront httpd
+| http-server-header: 
+|   AmazonS3
+|_  CloudFront
+| ssl-cert: Subject: commonName=*.prod.azdev.direct
+| Subject Alternative Name: DNS:*.prod.azdev.direct, DNS:*.allianz-direkt.es, DNS:allianz-direct.es, DNS:allianzdirect.es, DNS:*.allianzdirekt.es, DNS:allianz-direkt.es, DNS:allianzdirekt.es, DNS:*.allianz-direct.es, DNS:*.allianzdirect.es
+| Not valid before: 2025-03-01T00:00:00
+|_Not valid after:  2026-03-30T23:59:59
+|_http-title: Allianz Direct | Aseguradora De Coche y Moto Online
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 28 21:30:42 2025 -- 1 IP address (1 host up) scanned in 126.30 seconds
