@@ -1,0 +1,16 @@
+{
+  "timestamp": "2025-08-28T21:54:22.419704",
+  "emails": [],
+  "hashes": [],
+  "databases": [],
+  "tables": [
+    "Policies",
+    "claims",
+    "policies"
+  ],
+  "users": [
+    "sa",
+    "Sa"
+  ],
+  "raw_data": "<!DOCTYPE html><html lang=\"es-ES\"><script>var exports={}</script><meta charset=\"UTF-8\"><meta http-equiv=\"content-type\" content=\"text/html; charset=UTF-8\"><meta name=\"description\" content=\"Error 403 page\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1,shrink-to-fit=no\"><meta name=\"robots\" content=\"noindex, nofollow\"><title>Error 403</title><meta property=\"og:url\" content=\"https://www.allianzdirect.es/403/\"><meta property=\"og:image\" content=\"https://www.allianzdirect.es/dam/images/og/allianz-eagle.svg\"><meta property=\"og:title\" content=\"Error 403\"><meta property=\"og:description\" content=\"Error 403 page\"><meta property=\"og:site_name\" content=\"Allianz Direct\"><meta property=\"og:type\" content=\"website\"><meta name=\"twitter:card\" content=\"summary_card\"><meta name=\"twitter:site\" content=\"es-ES\"><meta name=\"google\" content=\"notranslate\"><link rel=\"preload\" href=\"/scripts/top.c4edcbae7d04c55c.js\" as=\"script\"><link rel=\"preload\" href=\"/styles/main.css\" as=\"style\"><link rel=\"pre"
+}
