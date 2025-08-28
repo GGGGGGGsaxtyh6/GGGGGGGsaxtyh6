@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>
+Evaluative
+</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.23.0/min/vs/editor/editor.main.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/static/css/styles.css"
+    />
+    <style>
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal {
+        display: block;
+        border: 2px dashed white;
+        color: white;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 1001;
+        border-radius: 8px;
+        padding: 20px;
+        max-width: 400px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        max-height: 20%;
+      }
+
+      .modal-content {
+        background-color: transparent !important;
+        text-align: center;
+      }
+
+      .modal-buttons button {
+        margin: 5px;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+      }
+
+      .modal-buttons button:hover {
+        background-color: #0056b3;
+      }
+
+      .arrow {
+        position: absolute;
+        z-index: 1002;
+        font-size: 24px;
+        color: white;
+        text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+      }
+      .resizer-line {
+        background-color: #888; /* Color of the middle line */
+        border-radius: 2px;
+      }
+
+      .vertical-resizer .resizer-line {
+        width: 2px;
+        height: 4%;
+        opacity: 0.6;
+      }
+
+      .horizontal-resizer .resizer-line {
+        opacity: 0.6;
+        height: 2px;
+        width: 4%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-container">
+      <!-- Left Span -->
+      <div id="left-pane">
+        <div id="brief">
+          
+          <h2>
+Evaluative
+</h2>
+          
+<p>You will be given:</p>
+<ol>
+    <li>A list of coefficients \( a_0 \)-\( a_8 \) where \( -100 \le a_i \le 100 \)</li>
+    <li>The integer \( x \), where \( -100 \le x \le 100 \)</li>
+</ol>
+<p>The polynomial is constructed as follows:</p>
+<p>\( a_0 + a_1 x + a_2 x^2 + ... + a_8 x^8 \)</p>
+<p>You need to evaluate the polynomial at \( x \).</p>
+
+          <hr style="background:#f0e3e3;">
+          <h2>Example</h2>
+          <h3>Input</h3>
+          
+<p>1 -2 3 -4 5 -6 7 -8 9</p>
+<p>5</p>
+
+          <h3>Output</h3>
+          
+<p>2983941</p>
+
+        </div>
+      </div>
+      <div class="vertical-resizer" style="display: flex;justify-content: center;width: 10px;align-items: center;">
+        <div class="resizer-line"></div>
+      </div>
+
+      <!-- Right Span -->
+      <div id="right-pane">
+        <div id="top-pane">
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              align-items: center;
+              padding: 5px;
+              background-color: #333;
+            "
+          >
+            <select
+              style="
+                height: 40px;
+                padding: 5px 10px;
+                border-radius: 5px;
+                border: none;
+                background-color: #282a36;
+                color: #f8f8f2;
+                font-size: 16px;
+                margin-right: 10px;
+              "
+              class="form-select"
+              id="language-select"
+              onchange="changeLanguage()"
+            >
+              <option value="python">Python</option>
+              <option value="c">C</option>
+              <option value="cpp">C++</option>
+              <option value="rust">Rust</option>
+            </select>
+            <button style="margin: 0" class="testBtn" onclick="runCode()">
+              <i class="fa-solid fa-play"></i> Run
+            </button>
+          </div>
+
+          <div id="container" style="height: calc(100% - 50px)"></div>
+        </div>
+        <div class="horizontal-resizer" style="display: flex;justify-content: center;">
+          <div class="resizer-line" style="margin: 2px;"></div>
+        </div>
+        <div id="bottom-pane">
+          <div
+            style="
+              width: 100%;
+              display: flex;
+              align-items: center;
+              padding: 5px;
+              background-color: #333;
+            "
+          >
+            <p class="trdd"><i class="fa-solid fa-terminal"></i> Test Result</p>
+          </div>
+          <div id="output">
+            <div>
+              <strong>Input:</strong><br />
+              <code id="input"></code>
+            </div>
+            <div>
+              <strong>Output:</strong><br />
+              <code id="result"></code>
+            </div>
+            <div>
+              <div
+                id="messageBox"
+                style="
+                  display: none;
+                  background: red;
+                  width: 100%;
+                  padding: 1px;
+                  margin: 8px;
+                  text-align: center;
+                  justify-content: center;
+                  align-items: center;
+                  height: 50px;
+                "
+              >
+                <p style="margin: 0" id="message"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-overlay" class="modal-overlay" style="display: none">
+      <div id="left-pane-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <p>
+            This is the left pane, where you'll find the problem description,
+            input, and output examples.
+          </p>
+          <div class="modal-buttons">
+            <button onclick="nextModal()">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="top-pane-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <p>
+            This is the top pane, where you can write and execute your code by
+            clicking on the "Run" button and change your preferred code
+            language.
+          </p>
+          <div class="modal-buttons">
+            <button onclick="prevModal()">Back</button>
+            <button onclick="nextModal()">Next</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="bottom-pane-modal" class="modal" style="display: none">
+        <div class="modal-content">
+          <p>
+            This is the bottom pane, where you can view the code output, the input provided to your code, and whether your solution is valid.
+          </p>
+          <div class="modal-buttons">
+            <button onclick="prevModal()">Back</button>
+            <button onclick="nextModal()">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let isResizingVertical = false;
+      let isResizingHorizontal = false;
+
+      const leftPane = document.getElementById("left-pane");
+      const rightPane = document.getElementById("right-pane");
+      const topPane = document.getElementById("top-pane");
+      const bottomPane = document.getElementById("bottom-pane");
+      const verticalResizer = document.querySelector(".vertical-resizer");
+      const horizontalResizer = document.querySelector(".horizontal-resizer");
+
+      // Vertical resizing logic for left span
+      verticalResizer.addEventListener("mousedown", (e) => {
+        isResizingVertical = true;
+        document.addEventListener("mousemove", resizeLeftPane);
+        document.addEventListener("mouseup", () => {
+          isResizingVertical = false;
+          document.removeEventListener("mousemove", resizeLeftPane);
+        });
+      });
+
+      function resizeLeftPane(e) {
+        if (!isResizingVertical) return;
+
+        const newWidth = e.clientX; // Current mouse position
+        const maxAllowedWidth = window.innerWidth - 300; // Keep space for the right pane
+        const minAllowedWidth = 100; // Minimum width for the left pane
+
+        if (newWidth >= minAllowedWidth && newWidth <= maxAllowedWidth) {
+          // Set the width of the left pane
+          leftPane.style.width = `${newWidth}px`;
+
+          // Adjust the right pane width accordingly
+          rightPane.style.width = `${window.innerWidth - newWidth}px`;
+        }
+      }
+
+      // Horizontal resizing logic for top and bottom panes
+      horizontalResizer.addEventListener("mousedown", (e) => {
+        isResizingHorizontal = true;
+        document.addEventListener("mousemove", resizeHorizontalPane);
+        document.addEventListener("mouseup", () => {
+          isResizingHorizontal = false;
+          document.removeEventListener("mousemove", resizeHorizontalPane);
+        });
+      });
+
+      function resizeHorizontalPane(e) {
+        if (!isResizingHorizontal) return;
+        const rightPaneHeight = rightPane.clientHeight;
+        const topPaneHeight = e.clientY - topPane.getBoundingClientRect().top;
+        const bottomPaneHeight =
+          rightPaneHeight - topPaneHeight - horizontalResizer.clientHeight;
+
+        if (topPaneHeight > 50 && bottomPaneHeight > 50) {
+          // Minimum heights
+          topPane.style.flex = `0 0 ${topPaneHeight}px`;
+          bottomPane.style.flex = `0 0 ${bottomPaneHeight}px`;
+        }
+      }
+    </script>
+    <script src="/static/js/prompts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.23.0/min/vs/loader.min.js"></script>
+    <script
+      id="MathJax-script"
+      defer
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+
+    <script>
+      window.onload = function () {
+        if (typeof MathJax !== "undefined") {
+          MathJax.typeset();
+        } else {
+          console.error("MathJax failed to load.");
+        }
+      };
+    </script>
+
+    <script>
+      let lang = "python";
+      require.config({
+        paths: {
+          vs: "https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.23.0/min/vs",
+        },
+      });
+      require(["vs/editor/editor.main"], function () {
+        var editor = monaco.editor.create(
+          document.getElementById("container"),
+          {
+            value: prompts["python"],
+            language: "python",
+            theme: "vs-dark", // Apply dark theme
+            automaticLayout: true,
+            fontSize: 16,
+          }
+        );
+
+        window.changeLanguage = function () {
+          let switch_lang = document.getElementById("language-select").value;
+
+          if (editor.getValue() === prompts[lang]) {
+            editor.setValue(prompts[switch_lang]);
+          }
+
+          monaco.editor.setModelLanguage(editor.getModel(), switch_lang);
+          lang = switch_lang;
+        };
+
+        window.runCode = function () {
+          var code = editor.getValue();
+          fetch("/run", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              code: code,
+              language: document.getElementById("language-select").value,
+            }),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              document.getElementById("input").textContent = data.input;
+              document.getElementById("result").textContent = data.result;
+
+              if (data.stderr) {
+                document.getElementById("message").textContent =
+                  "Invalid Solution";
+                document.getElementById("messageBox").style.backgroundColor =
+                  "#dd4242";
+                document.getElementById("messageBox").style.display = "flex";
+
+                if(!data.result) {
+                  document.getElementById("result").textContent = data.stderr;
+                }
+              } else if (data.flag) {
+                document.getElementById("message").textContent = data.flag;
+                document.getElementById("messageBox").style.backgroundColor =
+                  "#4ea23c";
+
+                document.getElementById("messageBox").style.display = "flex";
+              }
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+        };
+      });
+
+      MathJax.typeset();
+    </script>
+
+    <script>
+      const modals = [
+        {
+          id: "left-pane-modal",
+          target: "#left-pane",
+          arrowIcon: "fa-arrow-left",
+        },
+        {
+          id: "top-pane-modal",
+          target: "#top-pane",
+          arrowIcon: "fa-arrow-up",
+        },
+        {
+          id: "bottom-pane-modal",
+          target: "#bottom-pane",
+          arrowIcon: "fa-arrow-down",
+        },
+      ];
+
+      let currentModalIndex = 0;
+
+      function showModal(index) {
+        const modalOverlay = document.getElementById("modal-overlay");
+        modalOverlay.style.display = "flex";
+
+        const modal = modals[index];
+        const targetElement = document.querySelector(modal.target);
+        const modalElement = document.getElementById(modal.id);
+
+        // Display the modal
+        modalElement.style.display = "block";
+
+        // Position the modal and add arrows
+        const rect = targetElement.getBoundingClientRect();
+
+        const arrow = document.createElement("i");
+        arrow.className = `arrow fas ${modal.arrowIcon}`;
+
+        if (modal.target === "#left-pane") {
+          modalElement.style.top = `${rect.top + window.scrollY + 40}%`;
+          modalElement.style.left = `${rect.right + 50}px`;
+
+          arrow.style.top = `${
+            rect.top + window.scrollY + rect.height / 2 - 12
+          }px`;
+          arrow.style.left = `${rect.right + 5}px`;
+        } else if (modal.target === "#top-pane") {
+          modalElement.style.top = `${rect.bottom + 20}px`;
+          modalElement.style.left = `${rect.left + window.scrollX}px`;
+
+          arrow.style.top = `${rect.bottom + 5}px`;
+          arrow.style.left = `${
+            rect.left + window.scrollX + rect.width / 2 - 12
+          }px`;
+        } else if (modal.target === "#bottom-pane") {
+          modalElement.style.top = `${
+            rect.top + window.scrollY - modalElement.offsetHeight - 20
+          }px`;
+          modalElement.style.left = `${rect.left + window.scrollX}px`;
+
+          arrow.style.top = `${rect.top + window.scrollY - 25}px`;
+          arrow.style.left = `${
+            rect.left + window.scrollX + rect.width / 2 - 12
+          }px`;
+        }
+
+        modalOverlay.appendChild(arrow);
+        modalElement.arrow = arrow;
+      }
+
+      function hideModal(index) {
+        const modal = modals[index];
+        const modalElement = document.getElementById(modal.id);
+
+        modalElement.style.display = "none";
+
+        if (modalElement.arrow) {
+          modalElement.arrow.remove();
+        }
+
+        if (index === modals.length - 1) {
+          const modalOverlay = document.getElementById("modal-overlay");
+          modalOverlay.style.display = "none";
+        }
+      }
+
+      function prevModal() {
+        if (currentModalIndex > 0) {
+          hideModal(currentModalIndex);
+          currentModalIndex -= 1;
+          showModal(currentModalIndex);
+        }
+      }
+
+      function nextModal() {
+        hideModal(currentModalIndex);
+        currentModalIndex += 1;
+        if (currentModalIndex < modals.length) {
+          showModal(currentModalIndex);
+        } else {
+          localStorage.setItem("tutorialCompleted", "true");
+        }
+      }
+
+      window.onload = function () {
+        if (!localStorage.getItem("tutorialCompleted")) {
+          showModal(0);
+        }
+      };
+    </script>
+  </body>
+</html>
