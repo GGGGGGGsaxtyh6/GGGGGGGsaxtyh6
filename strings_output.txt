@@ -1,0 +1,406 @@
+!This program cannot be run in DOS mode.
+?Rich
+.text
+`.rdata
+@.data
+.pdata
+@.rsrc
+@.reloc
+B.ATOM
+HcD$
+HcD$
+HcL$
+HcD$
+HcD$
+s1fff
+HcD$
+HcL$
+HcD$
+HcD$0H;
+HcD$0HcL$0
+D$0HcD$0H;
+t$@H
+\$8H
+t$@H
+t$@H
+\$0H
+t$@H
+HcD$8H;
+HcD$8HcL$8
+D$8HcD$8H;
+\$0H
+t$@H
+|$ AVH
+t$(H
+L$@L
+L$HL
+D$0H
+L$0H
+D$hH
+L$ H
+\$0H
+\$@H
+D$@H
+D$HH
+\$`H
+t$pH
+|$xH
+<8.t
+\$0H
+\$0H
+\$0H
+t.H;
+WAVAWH
+tjfD9~Hs[3
+L$ A
+A_A^_
+WATAUAVAWH
+Lca<E3
+L$ A
+L$ I
+A_A^A]A\_
+L$03
+L$0H
+D$ f
+D$"H
+D$0H
+D$ 3
+l$ VWAVH
+T$pH
+D$@0
+D$PL
+\$HH
+D$X@
+L$(E3
+IcH<I
+    =.texu
+D$ H
+D$ H
+A^_^
+@SWH
+l$`H
+t$0H
+|$XH
+|$PH
+Hcu<H
+t$0H
+l$`H
+D$PD
+L$XH
+D$ H
+T$PD
+t$03
+l$`H
+UATH
+Lcq<L
+|$0I
+V0E3
+FPE3
+d$(D
+fE;f
+u	9n
+?t[I
+HcC<
+|$0I
+F0H;
+fE;V
+T$ H
+L$ L
+UVATAUAVAWH
+D$@H
+H9D$@
+T$pH
+A_A^A]A\^]
+T$pH
+T$PL
+D$PH
+D$PH
+D$@H
+D$0N
+t$(L
+D$HH
+D$ I
+D$HE
+D$HD
+H;D$H
+L$@H
+D$PH
+D9l$`
+@8t$su
+L;t$xs
+D$PH
+L9t$ht
+@8t$su
+L9t$xt
+A_A^A]A\^]
+\$,<
+\$HH
+t$PH
+L$$A
+;oht$H
+H;+t8H
+D$ H
+l$@H
+\$HH
+t$PH
+SUVWATAUAVAWH
+D$$*
+\$(L
+t$0D
+L$ A
+T$0M
+#T$$A
+t$0H
+HA_A^A]A\_^][
+s&L;
+K0D+C@H+
+9C@r
+H9{0s
+H9s s	
+\$0H
+t$8H
+L$ L
+SUVWATAUAVAWH
+T$0L
+|$ L
+D$(I;
+D$(I
+L9k0r$
+u	9C,
+K I+
+s H+
+H+t$(H
+T$(L
+T$0H
+T$0I
+HA_A^A]A\_^][
+\$0H
+|$ ATAUAVAWD
+<OE3
+S0I;
+s	L;
+\$(H
+l$0H
+t$8H
+|$@A_A^A]A\
+A+A@;
+Q@D+
+D$(H
+\$0H
+\$0H
+LZIPL
+L$ L
+D$pH
+D$HH
+D$xH
+D$ L
+L$PL
+D$XH
+T$@H
+D$8H
+D$@H
+D$HH
+D$@3
+L$ L
+D$hH
+D$pH
+D$0H
+D$xH
+D$(H
+D$ L
+D$`H
+T$hH
+D$XH
+D$`H
+D$@H
+T$ H
+D$$H
+D$(H
+L$ L
+D$xH
+D$PH
+D$pH
+D$0H
+D$ D
+L$4L
+D$HH
+T$PH
+D$8H
+D$0H
+D$XH
+D$0H
+D$PH
+T$0H
+D$ H
+D$ HcD$ H
+D$0H
+L$0H;
+s/HcD$ H
+D$$H
+L$(#
+D$(H
+D$(H
+Hc@<H
+D$ H
+D$0H
+D$8H
+D$@H
+D$ H
+D$0H
+D$8H
+D$@H
+XHcD$`H
+D$0f
+D$0H
+D$0H
+D$0H
+D$(H
+;D$`
+D$(H
+D$4H
+D$ f
+D$ =
+D$ k
+D$ k
+D$ k
+D$ k
+D$ k
+D$ k
+D$ k
+D$ k
+T$ +
+D$ k
+D$ k
+D$ k
+D$ k
+D$ k
+D$ k
+D$ k
+D$ k
+D$$f
+D$$=
+D$$k
+D$$k
+D$$k
+D$$k
+D$$k
+D$$k
+D$$k
+D$$k
+T$$+
+D$$k
+D$$k
+D$$k
+D$$k
+D$$k
+D$$k
+D$$k
+D$$k
+D$ H
+D$ H
+NTDLL.DLL
+KERNEL32.DLL
+LZIP
+GCTL
+.text$mn
+.idata$5
+.rdata
+.rdata$voltmd
+.rdata$zzzdbg
+.xdata
+.edata
+.idata$2
+.idata$3
+.idata$4
+.idata$6
+.data
+.bss
+.pdata
+.rsrc$01
+.rsrc$02
+PP64Stub.exe
+free
+malloc
+realloc
+strncmp
+HeapAlloc
+HeapFree
+HeapSize
+GetProcessHeap
+UnhandledExceptionFilter
+SetUnhandledExceptionFilter
+GetLastError
+ReleaseSRWLockExclusive
+ReleaseSRWLockShared
+TryAcquireSRWLockExclusive
+SetCriticalSectionSpinCount
+WakeAllConditionVariable
+KERNEL32.dll
+GetMenu
+GetSystemMenu
+CheckMenuItem
+EnableMenuItem
+GetMenuItemID
+UpdateWindow
+GetWindowContextHelpId
+MessageBoxA
+MessageBoxW
+MessageBeep
+USER32.dll
+<?xml version='1.0' encoding='UTF-8' standalone='yes'?>
+<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">
+    <security>
+      <requestedPrivileges>
+        <requestedExecutionLevel level='asInvoker' uiAccess='false' />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+</assembly>
+c>1"
+wx7uD|
+?@[D 3w
+{:}X
+h0|*
+y\m5
+.#.`x
+J/9|
+R\El
+E#[]'B
+=2>B
+*jcK
+6E@U
+"0*<
+g]u<@"
+qr5}
+jwG@$
+)5_(s
+4b?/U
+x$F*
+W]}q
+bgDRg7
+{|$r
+J'c]&
+*b.O
+J2#D
+uk`o
+wP94
+h]Pp.
+4{_:R
+>cCK
+S;e"~
+yJnH
+J?b_i
+KP!.
+`)`p
+<t3r
+DJLr5D@
+Yd_,^
+0(Q*p
+saHR]
+o\-a
+o3y6
+&	{f
+N4h\
+9?>#
+%yO@&q
