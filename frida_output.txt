@@ -1,0 +1,13 @@
+     ____
+    / _  |   Frida 17.2.17 - A world-class dynamic instrumentation toolkit
+   | (_| |
+    > _  |   Commands:
+   /_/ |_|       help      -> Displays the help system
+   . . . .       object?   -> Display information about 'object'
+   . . . .       exit/quit -> Exit
+   . . . .
+   . . . .   More info at https://frida.re/docs/home/
+   . . . .
+   . . . .   Connected to Local System (id=local)
+Spawning `wine bininst2.exe`...
+Failed to spawn: unable to find executable at 'wine bininst2.exe'
