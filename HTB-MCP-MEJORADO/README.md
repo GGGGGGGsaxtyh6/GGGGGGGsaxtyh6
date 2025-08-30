@@ -87,7 +87,6 @@ python3 submit_flag.py 365 "HTB{tu_flag_aqui}"
 1. **`get_challenge_ip.py`** - Obtiene la IP y puerto de un challenge activo
 2. **`start_challenge.py`** - Inicia un challenge usando el servidor MCP
 3. **`submit_flag.py`** - Envía flags a HackTheBox con manejo automático de dificultad
-4. **`examples_solve_baby_time_capsule.py`** - Ejemplo completo de resolución del challenge Baby Time Capsule
 
 ### Servidor MCP
 
@@ -101,25 +100,25 @@ El archivo `htb-mcp-server` es el servidor principal que se comunica con la API 
 - `get_user_profile` - Obtiene perfil del usuario
 - `get_user_progress` - Obtiene progreso del usuario
 
-## 📚 Ejemplo Completo: Resolver Baby Time Capsule
+## 📚 Ejemplo de Uso Completo
 
 ```bash
 # 1. Configurar token (solo la primera vez)
 cp .env.example .env
 # Editar .env y poner tu token
 
-# 2. Iniciar el challenge
+# 2. Iniciar un challenge (ejemplo con ID 365)
 python3 start_challenge.py 365
 
-# 3. Obtener la IP (si no la tienes del paso anterior)
+# 3. Obtener la IP del challenge
 python3 get_challenge_ip.py 365
-# Supongamos que devuelve: IP: 94.237.55.43, Puerto: 37928
+# Output: IP: 94.237.55.43, Puerto: 37928
 
-# 4. Resolver el challenge
-python3 examples_solve_baby_time_capsule.py 94.237.55.43 37928
+# 4. Resolver el challenge con tu exploit
+python3 tu_exploit.py 94.237.55.43 37928
 
 # 5. Enviar la flag obtenida
-python3 submit_flag.py 365 "HTB{t3h_FuTUr3_15_bR1ghT_1_H0p3_y0uR3_W34r1nG_5h4d35!}"
+python3 submit_flag.py 365 "HTB{flag_obtenida}"
 ```
 
 ## 🔍 Solución de Problemas
@@ -154,7 +153,6 @@ HTB-MCP-MEJORADO/
 ├── get_challenge_ip.py         # Obtener IP de challenges
 ├── start_challenge.py          # Iniciar challenges
 ├── submit_flag.py              # Enviar flags
-├── examples_solve_baby_time_capsule.py  # Ejemplo de exploit
 ├── README.md                   # Esta documentación
 ├── internal/                   # Código fuente Go del servidor
 ├── pkg/                        # Librerías Go
