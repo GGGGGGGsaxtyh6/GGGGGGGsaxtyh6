@@ -48,8 +48,22 @@ print(f"Puerto: {data['docker_ports'][0]}")
 - `submit_challenge_flag` - Flag challenge
 - `get_user_profile` - Ver perfil
 
+## Sherlocks (Investigaciones Forenses)
+
+```bash
+# Listar sherlocks disponibles
+python3 ejemplos/sherlocks.py listar
+
+# Descargar archivo de un sherlock
+python3 ejemplos/sherlocks.py descargar 631
+
+# Enviar respuesta a una pregunta
+python3 ejemplos/sherlocks.py responder 631 1 "respuesta_aqui"
+```
+
 ## Notas
 
 - Token ya configurado en `.env`
 - Contraseña ZIPs: `hackthebox`
 - Solo 1 máquina y 1 challenge activo en free
+- Los Sherlocks son archivos descargables con preguntas que responder
