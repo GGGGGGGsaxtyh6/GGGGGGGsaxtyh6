@@ -1,0 +1,9 @@
+http://aia.entru
+http://cacert
+http://crl3.digicert.com/DigiCertTru
+http://crl4.digicert.com/DigiCertTru
+http://crl.entru
+http://oc
+https://www.entru
+http://www.digicert.com/CPS0
+http://www.entru
