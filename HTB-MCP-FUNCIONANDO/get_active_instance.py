@@ -1,70 +1,89 @@
 #!/usr/bin/env python3
-import json
-import subprocess
-import os
-import time
 import requests
+import json
 
-# Leer el token del archivo .env
+# Leer el token
 with open('.env', 'r') as f:
     env_content = f.read()
     token = env_content.split('HTB_TOKEN=')[1].split('\n')[0]
 
-env = os.environ.copy()
-env['HTB_TOKEN'] = token
+headers = {
+    "Authorization": f"Bearer {token}",
+    "User-Agent": "HTB MCP Server",
+    "Accept": "application/json",
+    "Content-Type": "application/json"
+}
 
-print("Obteniendo instancia activa del challenge...")
+print("[*] Obteniendo instancias activas...")
 
-# Obtener instancia activa usando la API directamente
-headers = {"Authorization": f"Bearer {token}"}
+# Endpoint correcto según el código del MCP
+url = "https://labs.hackthebox.com/api/v4/challenge/active"
+print(f"Probando: {url}")
 
-try:
-    # Obtener instancias activas
-    r = requests.get(
-        "https://labs.hackthebox.com/api/v4/challenge/active",
-        headers=headers
-    )
-    
-    if r.status_code == 200:
-        active = r.json()
-        print(f"Respuesta de instancias activas: {json.dumps(active, indent=2)}")
+r = requests.get(url, headers=headers)
+print(f"Status: {r.status_code}")
+
+if r.status_code == 200:
+    try:
+        data = r.json()
+        print(json.dumps(data, indent=2))
         
-        if 'data' in active and active['data']:
-            for instance in active['data']:
-                if instance.get('id') == 365 or 'Baby Time Capsule' in instance.get('name', ''):
-                    print(f"\n=== INSTANCIA ENCONTRADA ===")
-                    print(f"ID: {instance.get('id')}")
-                    print(f"Nombre: {instance.get('name')}")
-                    if 'ip' in instance:
-                        print(f"IP: {instance['ip']}")
-                    if 'port' in instance:
-                        print(f"Puerto: {instance['port']}")
-    else:
-        print(f"Error obteniendo instancias: {r.status_code}")
-        print(r.text)
-        
-except Exception as e:
-    print(f"Error: {e}")
+        # Buscar la instancia de Baby Time Capsule
+        for item in data:
+            if isinstance(item, dict):
+                if item.get('challenge_id') == 365 or 'Baby Time Capsule' in str(item):
+                    print(f"\n[+] Instancia encontrada: {item}")
+                    
+                    # Buscar IPs
+                    text = json.dumps(item)
+                    import re
+                    ips = re.findall(r'\b(?:[0-9]{1,3}\.){3}[0-9]{1,3}\b', text)
+                    if ips:
+                        print(f"[+] IPs: {ips}")
+    except Exception as e:
+        print(f"Error parsing JSON: {e}")
+        print(f"Respuesta raw: {r.text[:500]}")
+else:
+    print(f"Respuesta: {r.text[:500]}")
 
-# También intentar con el servidor MCP
-print("\n\nIntentando con servidor MCP...")
-p = subprocess.Popen(['./htb-mcp-server'], 
-                    stdin=subprocess.PIPE, 
-                    stdout=subprocess.PIPE, 
-                    stderr=subprocess.PIPE,
-                    env=env, 
-                    text=True)
+# Probar obtener info del challenge directamente
+print("\n[*] Obteniendo info del challenge 365...")
+url = "https://labs.hackthebox.com/api/v4/challenge/365"
+r = requests.get(url, headers=headers)
+print(f"Status: {r.status_code}")
 
-# Inicializar
-p.stdin.write('{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"0.1.0"}}\n')
-p.stdin.flush()
-init_response = p.stdout.readline()
+if r.status_code == 200:
+    try:
+        data = r.json()
+        print(json.dumps(data, indent=2))
+    except:
+        print(f"Respuesta: {r.text[:500]}")
 
-# Obtener IP del challenge
-p.stdin.write('{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"get_challenge_ip","arguments":{"challenge_id":365}}}\n')
-p.stdin.flush()
-ip_response = p.stdout.readline()
-print(f"Respuesta IP: {ip_response}")
+# Probar con el endpoint de activity
+print("\n[*] Obteniendo actividad...")
+url = "https://labs.hackthebox.com/api/v4/challenge/activity"
+r = requests.get(url, headers=headers)
+print(f"Status: {r.status_code}")
 
-time.sleep(1)
-p.terminate()
+if r.status_code == 200:
+    try:
+        data = r.json()
+        if isinstance(data, list):
+            for item in data:
+                if '365' in str(item) or 'Baby' in str(item):
+                    print(f"Actividad relacionada: {item}")
+    except:
+        pass
+
+# Probar obtener la conexión
+print("\n[*] Obteniendo conexión del challenge...")
+url = "https://labs.hackthebox.com/api/v4/connection/status"
+r = requests.get(url, headers=headers)
+print(f"Status: {r.status_code}")
+
+if r.status_code == 200:
+    try:
+        data = r.json()
+        print(json.dumps(data, indent=2))
+    except:
+        print(f"Respuesta: {r.text[:500]}")
