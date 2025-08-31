@@ -1,0 +1,865 @@
+{
+  "timestamp": "2025-08-31T00:17:59.675688",
+  "connections": [
+    {
+      "type": "TCP",
+      "local": "0.0.0.0:2375",
+      "remote": "0.0.0.0:0",
+      "state": "LISTEN",
+      "uid": 0,
+      "inode": "3419"
+    },
+    {
+      "type": "TCP",
+      "local": "0.0.0.0:26500",
+      "remote": "0.0.0.0:0",
+      "state": "LISTEN",
+      "uid": 0,
+      "inode": "2782"
+    },
+    {
+      "type": "TCP",
+      "local": "172.30.0.2:2375",
+      "remote": "192.168.118.161:38466",
+      "state": "ESTABLISHED",
+      "uid": 0,
+      "inode": "3016"
+    },
+    {
+      "type": "TCP",
+      "local": "172.30.0.2:33304",
+      "remote": "54.225.14.124:443",
+      "state": "ESTABLISHED",
+      "uid": 1000,
+      "inode": "6523"
+    },
+    {
+      "type": "TCP",
+      "local": "172.30.0.2:26500",
+      "remote": "192.168.118.161:55172",
+      "state": "ESTABLISHED",
+      "uid": 0,
+      "inode": "3666"
+    },
+    {
+      "type": "TCP",
+      "local": "172.30.0.2:50442",
+      "remote": "13.219.0.151:443",
+      "state": "ESTABLISHED",
+      "uid": 1000,
+      "inode": "7395"
+    },
+    {
+      "type": "TCP",
+      "local": "172.30.0.2:42236",
+      "remote": "172.253.62.100:443",
+      "state": "ESTABLISHED",
+      "uid": 1000,
+      "inode": "4931"
+    },
+    {
+      "type": "TCP",
+      "local": "172.30.0.2:57106",
+      "remote": "104.18.18.125:443",
+      "state": "ESTABLISHED",
+      "uid": 1000,
+      "inode": "8356"
+    },
+    {
+      "type": "TCP",
+      "local": "172.30.0.2:57478",
+      "remote": "3.210.133.103:443",
+      "state": "ESTABLISHED",
+      "uid": 1000,
+      "inode": "5455"
+    }
+  ],
+  "suspicious_connections": [
+    {
+      "type": "TCP",
+      "local": "172.30.0.2:2375",
+      "remote": "192.168.118.161:38466",
+      "state": "ESTABLISHED",
+      "uid": 0,
+      "inode": "3016"
+    },
+    {
+      "type": "TCP",
+      "local": "172.30.0.2:26500",
+      "remote": "192.168.118.161:55172",
+      "state": "ESTABLISHED",
+      "uid": 0,
+      "inode": "3666"
+    },
+    {
+      "type": "TCP",
+      "local": "172.30.0.2:2375",
+      "remote": "192.168.118.161:38466",
+      "state": "ESTABLISHED",
+      "uid": 0,
+      "inode": "3016"
+    },
+    {
+      "type": "TCP",
+      "local": "172.30.0.2:26500",
+      "remote": "192.168.118.161:55172",
+      "state": "ESTABLISHED",
+      "uid": 0,
+      "inode": "3666"
+    }
+  ],
+  "open_ports": [
+    {
+      "port": 2375,
+      "protocol": "TCP",
+      "address": "0.0.0.0:2375",
+      "suspicious": false
+    },
+    {
+      "port": 26500,
+      "protocol": "TCP",
+      "address": "0.0.0.0:26500",
+      "suspicious": false
+    }
+  ],
+  "processes": [
+    {
+      "pid": 839,
+      "name": "node",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon/node /home/ubuntu/.vm-daemon/bin/vm-daemon/dist/index.cjs 2605",
+      "inode": "2040"
+    },
+    {
+      "pid": 839,
+      "name": "node",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon/node /home/ubuntu/.vm-daemon/bin/vm-daemon/dist/index.cjs 2605",
+      "inode": "6932"
+    },
+    {
+      "pid": 839,
+      "name": "node",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon/node /home/ubuntu/.vm-daemon/bin/vm-daemon/dist/index.cjs 2605",
+      "inode": "6933"
+    },
+    {
+      "pid": 839,
+      "name": "node",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon/node /home/ubuntu/.vm-daemon/bin/vm-daemon/dist/index.cjs 2605",
+      "inode": "4791"
+    },
+    {
+      "pid": 839,
+      "name": "node",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon/node /home/ubuntu/.vm-daemon/bin/vm-daemon/dist/index.cjs 2605",
+      "inode": "4793"
+    },
+    {
+      "pid": 839,
+      "name": "node",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon/node /home/ubuntu/.vm-daemon/bin/vm-daemon/dist/index.cjs 2605",
+      "inode": "4795"
+    },
+    {
+      "pid": 856,
+      "name": "xvfb-run",
+      "cmdline": "/bin/sh /usr/bin/xvfb-run --auto-servernum --server-args -screen 0 2x2x8 /home/ubuntu/.vm-daemon/bin",
+      "inode": "4792"
+    },
+    {
+      "pid": 856,
+      "name": "xvfb-run",
+      "cmdline": "/bin/sh /usr/bin/xvfb-run --auto-servernum --server-args -screen 0 2x2x8 /home/ubuntu/.vm-daemon/bin",
+      "inode": "4794"
+    },
+    {
+      "pid": 856,
+      "name": "xvfb-run",
+      "cmdline": "/bin/sh /usr/bin/xvfb-run --auto-servernum --server-args -screen 0 2x2x8 /home/ubuntu/.vm-daemon/bin",
+      "inode": "4796"
+    },
+    {
+      "pid": 872,
+      "name": "Xvfb",
+      "cmdline": "Xvfb :99 -screen 0 2x2x8 -nolisten tcp -auth /tmp/xvfb-run.26M0I5/Xauthority",
+      "inode": "2047"
+    },
+    {
+      "pid": 872,
+      "name": "Xvfb",
+      "cmdline": "Xvfb :99 -screen 0 2x2x8 -nolisten tcp -auth /tmp/xvfb-run.26M0I5/Xauthority",
+      "inode": "2048"
+    },
+    {
+      "pid": 872,
+      "name": "Xvfb",
+      "cmdline": "Xvfb :99 -screen 0 2x2x8 -nolisten tcp -auth /tmp/xvfb-run.26M0I5/Xauthority",
+      "inode": "6194"
+    },
+    {
+      "pid": 872,
+      "name": "Xvfb",
+      "cmdline": "Xvfb :99 -screen 0 2x2x8 -nolisten tcp -auth /tmp/xvfb-run.26M0I5/Xauthority",
+      "inode": "6195"
+    },
+    {
+      "pid": 872,
+      "name": "Xvfb",
+      "cmdline": "Xvfb :99 -screen 0 2x2x8 -nolisten tcp -auth /tmp/xvfb-run.26M0I5/Xauthority",
+      "inode": "6198"
+    },
+    {
+      "pid": 872,
+      "name": "Xvfb",
+      "cmdline": "Xvfb :99 -screen 0 2x2x8 -nolisten tcp -auth /tmp/xvfb-run.26M0I5/Xauthority",
+      "inode": "6199"
+    },
+    {
+      "pid": 872,
+      "name": "Xvfb",
+      "cmdline": "Xvfb :99 -screen 0 2x2x8 -nolisten tcp -auth /tmp/xvfb-run.26M0I5/Xauthority",
+      "inode": "6210"
+    },
+    {
+      "pid": 872,
+      "name": "Xvfb",
+      "cmdline": "Xvfb :99 -screen 0 2x2x8 -nolisten tcp -auth /tmp/xvfb-run.26M0I5/Xauthority",
+      "inode": "6211"
+    },
+    {
+      "pid": 872,
+      "name": "Xvfb",
+      "cmdline": "Xvfb :99 -screen 0 2x2x8 -nolisten tcp -auth /tmp/xvfb-run.26M0I5/Xauthority",
+      "inode": "7215"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4792"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4794"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4796"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4840"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4841"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4843"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4845"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5160"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4900"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4901"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4903"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5238"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4910"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7207"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6196"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4911"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6200"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7214"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4942"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6219"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5063"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "8259"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6244"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5065"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "8298"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5441"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6732"
+    },
+    {
+      "pid": 887,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7491"
+    },
+    {
+      "pid": 890,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4794"
+    },
+    {
+      "pid": 890,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4796"
+    },
+    {
+      "pid": 890,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4844"
+    },
+    {
+      "pid": 890,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4840"
+    },
+    {
+      "pid": 891,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4794"
+    },
+    {
+      "pid": 891,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4796"
+    },
+    {
+      "pid": 891,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4846"
+    },
+    {
+      "pid": 891,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4840"
+    },
+    {
+      "pid": 913,
+      "name": "chrome_crashpad",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4792"
+    },
+    {
+      "pid": 913,
+      "name": "chrome_crashpad",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4794"
+    },
+    {
+      "pid": 913,
+      "name": "chrome_crashpad",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4796"
+    },
+    {
+      "pid": 913,
+      "name": "chrome_crashpad",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5161"
+    },
+    {
+      "pid": 924,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4794"
+    },
+    {
+      "pid": 924,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4796"
+    },
+    {
+      "pid": 924,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5160"
+    },
+    {
+      "pid": 924,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6197"
+    },
+    {
+      "pid": 924,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7197"
+    },
+    {
+      "pid": 924,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7198"
+    },
+    {
+      "pid": 924,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7199"
+    },
+    {
+      "pid": 924,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7200"
+    },
+    {
+      "pid": 924,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7206"
+    },
+    {
+      "pid": 924,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6220"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4794"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4796"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5160"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4912"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5237"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5431"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4931"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4958"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5433"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6372"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5455"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "8307"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7395"
+    },
+    {
+      "pid": 928,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "8403"
+    },
+    {
+      "pid": 962,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4794"
+    },
+    {
+      "pid": 962,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4796"
+    },
+    {
+      "pid": 962,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4840"
+    },
+    {
+      "pid": 962,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "4943"
+    },
+    {
+      "pid": 962,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5160"
+    },
+    {
+      "pid": 962,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6218"
+    },
+    {
+      "pid": 962,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6221"
+    },
+    {
+      "pid": 962,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5435"
+    },
+    {
+      "pid": 962,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6374"
+    },
+    {
+      "pid": 962,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6386"
+    },
+    {
+      "pid": 962,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "8306"
+    },
+    {
+      "pid": 962,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "8405"
+    },
+    {
+      "pid": 1144,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5160"
+    },
+    {
+      "pid": 1144,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5064"
+    },
+    {
+      "pid": 1144,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6243"
+    },
+    {
+      "pid": 1144,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5430"
+    },
+    {
+      "pid": 1144,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6387"
+    },
+    {
+      "pid": 1145,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5160"
+    },
+    {
+      "pid": 1145,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5066"
+    },
+    {
+      "pid": 1145,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "8258"
+    },
+    {
+      "pid": 1145,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5432"
+    },
+    {
+      "pid": 1145,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5434"
+    },
+    {
+      "pid": 1164,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5160"
+    },
+    {
+      "pid": 1164,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5442"
+    },
+    {
+      "pid": 1164,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "8297"
+    },
+    {
+      "pid": 1164,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6371"
+    },
+    {
+      "pid": 1164,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6373"
+    },
+    {
+      "pid": 1164,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7396"
+    },
+    {
+      "pid": 1164,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7404"
+    },
+    {
+      "pid": 1164,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7405"
+    },
+    {
+      "pid": 1164,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7404"
+    },
+    {
+      "pid": 1164,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7655"
+    },
+    {
+      "pid": 1164,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7416"
+    },
+    {
+      "pid": 1164,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6523"
+    },
+    {
+      "pid": 1164,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "8356"
+    },
+    {
+      "pid": 1457,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "5160"
+    },
+    {
+      "pid": 1457,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "7492"
+    },
+    {
+      "pid": 1457,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "6731"
+    },
+    {
+      "pid": 1457,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "8402"
+    },
+    {
+      "pid": 1457,
+      "name": "cursor-nightly",
+      "cmdline": "/home/ubuntu/.vm-daemon/bin/vm-daemon-cursor-b5299d4577c296ee4b87abd4c7aa7c016674a0f024613436400fb6c",
+      "inode": "8404"
+    }
+  ],
+  "alerts": [
+    "\u26a0\ufe0f Conexi\u00f3n sospechosa: 172.30.0.2:2375 -> 192.168.118.161:38466 (Estado: ESTABLISHED)",
+    "\u26a0\ufe0f Conexi\u00f3n sospechosa: 172.30.0.2:26500 -> 192.168.118.161:55172 (Estado: ESTABLISHED)",
+    "\u26a0\ufe0f Conexi\u00f3n sospechosa: 172.30.0.2:2375 -> 192.168.118.161:38466 (Estado: ESTABLISHED)",
+    "\u26a0\ufe0f Conexi\u00f3n sospechosa: 172.30.0.2:26500 -> 192.168.118.161:55172 (Estado: ESTABLISHED)"
+  ]
+}
