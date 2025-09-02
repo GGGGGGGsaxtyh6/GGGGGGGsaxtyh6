@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard - WebApp Dinámica{% endblock %}
+
+{% block content %}
+<div class="dashboard">
+    <div class="dashboard-header">
+        <h1>Dashboard</h1>
+        <p>Bienvenido, <strong>{{ current_user.username }}</strong>!</p>
+    </div>
+    
+    <!-- Stats Cards -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-icon" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <i class="ri-article-line"></i>
+            </div>
+            <div class="stat-content">
+                <h3>{{ stats.posts }}</h3>
+                <p>Posts Creados</p>
+            </div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                <i class="ri-task-line"></i>
+            </div>
+            <div class="stat-content">
+                <h3>{{ stats.todos }}</h3>
+                <p>Tareas Totales</p>
+            </div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                <i class="ri-checkbox-circle-line"></i>
+            </div>
+            <div class="stat-content">
+                <h3>{{ stats.completed_todos }}</h3>
+                <p>Tareas Completadas</p>
+            </div>
+        </div>
+        
+        <div class="stat-card">
+            <div class="stat-icon" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                <i class="ri-calendar-line"></i>
+            </div>
+            <div class="stat-content">
+                <h3>{{ stats.days_member }}</h3>
+                <p>Días como Miembro</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="dashboard-content">
+        <!-- Recent Posts -->
+        <div class="dashboard-section">
+            <div class="section-header">
+                <h2><i class="ri-article-line"></i> Posts Recientes</h2>
+                <a href="{{ url_for('create_post') }}" class="btn btn-sm btn-primary">
+                    <i class="ri-add-line"></i> Nuevo Post
+                </a>
+            </div>
+            
+            {% if recent_posts %}
+                <div class="posts-list">
+                    {% for post in recent_posts %}
+                        <div class="post-item">
+                            <div class="post-avatar" style="background: {{ post.author.avatar_color }}">
+                                {{ post.author.username[0].upper() }}
+                            </div>
+                            <div class="post-content">
+                                <h4>{{ post.title }}</h4>
+                                <p>{{ post.content[:100] }}{% if post.content|length > 100 %}...{% endif %}</p>
+                                <div class="post-meta">
+                                    <span><i class="ri-user-line"></i> {{ post.author.username }}</span>
+                                    <span><i class="ri-time-line"></i> {{ post.created_at.strftime('%d/%m/%Y') }}</span>
+                                    <span><i class="ri-heart-line"></i> {{ post.likes }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="empty-state">
+                    <i class="ri-article-line"></i>
+                    <p>No hay posts aún. ¡Crea el primero!</p>
+                </div>
+            {% endif %}
+        </div>
+        
+        <!-- Pending Todos -->
+        <div class="dashboard-section">
+            <div class="section-header">
+                <h2><i class="ri-todo-line"></i> Tareas Pendientes</h2>
+                <a href="{{ url_for('todos') }}" class="btn btn-sm btn-secondary">
+                    Ver Todas <i class="ri-arrow-right-line"></i>
+                </a>
+            </div>
+            
+            {% if todos %}
+                <div class="todos-list">
+                    {% for todo in todos %}
+                        <div class="todo-item">
+                            <input type="checkbox" class="todo-checkbox" 
+                                   data-id="{{ todo.id }}" 
+                                   {% if todo.completed %}checked{% endif %}>
+                            <div class="todo-content">
+                                <span class="todo-task {% if todo.completed %}completed{% endif %}">
+                                    {{ todo.task }}
+                                </span>
+                                <span class="todo-priority priority-{{ todo.priority }}">
+                                    {{ todo.priority }}
+                                </span>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="empty-state">
+                    <i class="ri-checkbox-line"></i>
+                    <p>No hay tareas pendientes. ¡Excelente!</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+    
+    <!-- Quick Actions -->
+    <div class="quick-actions">
+        <h3>Acciones Rápidas</h3>
+        <div class="actions-grid">
+            <a href="{{ url_for('create_post') }}" class="action-card">
+                <i class="ri-edit-2-line"></i>
+                <span>Crear Post</span>
+            </a>
+            <a href="{{ url_for('todos') }}" class="action-card">
+                <i class="ri-add-circle-line"></i>
+                <span>Nueva Tarea</span>
+            </a>
+            <a href="{{ url_for('profile') }}" class="action-card">
+                <i class="ri-user-settings-line"></i>
+                <span>Editar Perfil</span>
+            </a>
+            <a href="{{ url_for('posts') }}" class="action-card">
+                <i class="ri-eye-line"></i>
+                <span>Ver Posts</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<script>
+// Toggle todo completion
+document.querySelectorAll('.todo-checkbox').forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        const todoId = this.dataset.id;
+        fetch(`/todos/${todoId}/toggle`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            const task = this.nextElementSibling.querySelector('.todo-task');
+            if (data.completed) {
+                task.classList.add('completed');
+            } else {
+                task.classList.remove('completed');
+            }
+        });
+    });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}Posts - WebApp Dinámica{% endblock %}
+
+{% block content %}
+<div class="posts-container">
+    <div class="posts-header">
+        <h1>Posts de la Comunidad</h1>
+        <a href="{{ url_for('create_post') }}" class="btn btn-primary">
+            <i class="ri-add-line"></i> Crear Post
+        </a>
+    </div>
+    
+    {% if posts %}
+        <div class="posts-grid">
+            {% for post in posts %}
+                <article class="post-card">
+                    <div class="post-header">
+                        <div class="post-author">
+                            <div class="author-avatar" style="background: {{ post.author.avatar_color }}">
+                                {{ post.author.username[0].upper() }}
+                            </div>
+                            <div class="author-info">
+                                <h4>{{ post.author.username }}</h4>
+                                <span>{{ post.created_at.strftime('%d %B %Y') }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="post-body">
+                        <h2>{{ post.title }}</h2>
+                        <p>{{ post.content }}</p>
+                    </div>
+                    
+                    <div class="post-footer">
+                        <button class="btn-like" onclick="likePost({{ post.id }}, this)">
+                            <i class="ri-heart-line"></i>
+                            <span class="like-count">{{ post.likes }}</span>
+                        </button>
+                        <button class="btn-comment">
+                            <i class="ri-chat-1-line"></i>
+                            Comentar
+                        </button>
+                        <button class="btn-share">
+                            <i class="ri-share-line"></i>
+                            Compartir
+                        </button>
+                    </div>
+                </article>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="empty-state">
+            <i class="ri-article-line"></i>
+            <h3>No hay posts aún</h3>
+            <p>Sé el primero en compartir algo con la comunidad</p>
+            <a href="{{ url_for('create_post') }}" class="btn btn-primary">
+                Crear mi primer post
+            </a>
+        </div>
+    {% endif %}
+</div>
+
+<script>
+function likePost(postId, button) {
+    fetch(`/posts/${postId}/like`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        button.querySelector('.like-count').textContent = data.likes;
+        button.classList.add('liked');
+    });
+}
+</script>
+{% endblock %}

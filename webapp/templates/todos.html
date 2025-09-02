@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Tareas - WebApp Dinámica{% endblock %}
+
+{% block content %}
+<div class="todos-container">
+    <div class="todos-header">
+        <h1>Mis Tareas</h1>
+        <div class="todos-stats">
+            <span class="stat-badge">
+                <i class="ri-list-check"></i>
+                Total: {{ todos|length }}
+            </span>
+            <span class="stat-badge">
+                <i class="ri-checkbox-circle-line"></i>
+                Completadas: {{ todos|selectattr('completed')|list|length }}
+            </span>
+        </div>
+    </div>
+    
+    <div class="add-todo-form">
+        <form method="POST" action="{{ url_for('add_todo') }}">
+            <div class="form-row">
+                <input type="text" name="task" placeholder="Nueva tarea..." required>
+                <select name="priority">
+                    <option value="low">Baja</option>
+                    <option value="medium" selected>Media</option>
+                    <option value="high">Alta</option>
+                </select>
+                <button type="submit" class="btn btn-primary">
+                    <i class="ri-add-line"></i> Añadir
+                </button>
+            </div>
+        </form>
+    </div>
+    
+    {% if todos %}
+        <div class="todos-list">
+            {% for todo in todos %}
+                <div class="todo-card {% if todo.completed %}completed{% endif %}">
+                    <input type="checkbox" class="todo-check" 
+                           data-id="{{ todo.id }}"
+                           {% if todo.completed %}checked{% endif %}>
+                    
+                    <div class="todo-info">
+                        <span class="todo-text">{{ todo.task }}</span>
+                        <div class="todo-meta">
+                            <span class="priority-badge priority-{{ todo.priority }}">
+                                {{ todo.priority }}
+                            </span>
+                            <span class="todo-date">
+                                <i class="ri-calendar-line"></i>
+                                {{ todo.created_at.strftime('%d/%m/%Y') }}
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <form method="POST" action="{{ url_for('delete_todo', todo_id=todo.id) }}" class="delete-form">
+                        <button type="submit" class="btn-delete" title="Eliminar">
+                            <i class="ri-delete-bin-line"></i>
+                        </button>
+                    </form>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="empty-state">
+            <i class="ri-checkbox-multiple-blank-line"></i>
+            <h3>No hay tareas</h3>
+            <p>¡Añade tu primera tarea para comenzar!</p>
+        </div>
+    {% endif %}
+</div>
+
+<script>
+document.querySelectorAll('.todo-check').forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+        const todoId = this.dataset.id;
+        const todoCard = this.closest('.todo-card');
+        
+        fetch(`/todos/${todoId}/toggle`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.completed) {
+                todoCard.classList.add('completed');
+            } else {
+                todoCard.classList.remove('completed');
+            }
+        });
+    });
+});
+</script>
+{% endblock %}
