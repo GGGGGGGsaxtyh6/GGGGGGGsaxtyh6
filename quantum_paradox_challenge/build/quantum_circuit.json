@@ -1,0 +1,126 @@
+{
+  "gates": [
+    {
+      "type": "CNOT",
+      "qubit": 6,
+      "target": null,
+      "fake_flag_bit": "0"
+    },
+    {
+      "type": "Y",
+      "qubit": 6,
+      "target": null,
+      "fake_flag_bit": "0"
+    },
+    {
+      "type": "CNOT",
+      "qubit": 0,
+      "target": null,
+      "fake_flag_bit": "1"
+    },
+    {
+      "type": "CNOT",
+      "qubit": 2,
+      "target": null,
+      "fake_flag_bit": "0"
+    },
+    {
+      "type": "S",
+      "qubit": 3,
+      "target": null,
+      "fake_flag_bit": "0"
+    },
+    {
+      "type": "Y",
+      "qubit": 5,
+      "target": 0,
+      "fake_flag_bit": "1"
+    },
+    {
+      "type": "SWAP",
+      "qubit": 6,
+      "target": null,
+      "fake_flag_bit": "1"
+    },
+    {
+      "type": "S",
+      "qubit": 2,
+      "target": null,
+      "fake_flag_bit": "1"
+    },
+    {
+      "type": "H",
+      "qubit": 5,
+      "target": null,
+      "fake_flag_bit": "0"
+    },
+    {
+      "type": "H",
+      "qubit": 4,
+      "target": 4,
+      "fake_flag_bit": "1"
+    },
+    {
+      "type": "H",
+      "qubit": 1,
+      "target": null,
+      "fake_flag_bit": "1"
+    },
+    {
+      "type": "Z",
+      "qubit": 4,
+      "target": 4,
+      "fake_flag_bit": "1"
+    },
+    {
+      "type": "SWAP",
+      "qubit": 0,
+      "target": null,
+      "fake_flag_bit": "1"
+    },
+    {
+      "type": "H",
+      "qubit": 3,
+      "target": null,
+      "fake_flag_bit": "1"
+    },
+    {
+      "type": "H",
+      "qubit": 6,
+      "target": null,
+      "fake_flag_bit": "1"
+    },
+    {
+      "type": "CNOT",
+      "qubit": 1,
+      "target": null,
+      "fake_flag_bit": "0"
+    },
+    {
+      "type": "Z",
+      "qubit": 7,
+      "target": null,
+      "fake_flag_bit": "0"
+    },
+    {
+      "type": "X",
+      "qubit": 4,
+      "target": null,
+      "fake_flag_bit": "0"
+    },
+    {
+      "type": "CZ",
+      "qubit": 3,
+      "target": 1,
+      "fake_flag_bit": "0"
+    },
+    {
+      "type": "CNOT",
+      "qubit": 7,
+      "target": 6,
+      "fake_flag_bit": "0"
+    }
+  ],
+  "qubits": 8,
+  "depth": 20
+}

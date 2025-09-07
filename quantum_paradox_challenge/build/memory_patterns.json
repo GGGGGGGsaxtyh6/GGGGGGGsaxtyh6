@@ -1,0 +1,32 @@
+[
+  {
+    "layer": 0,
+    "obfuscation_type": "HEX",
+    "data": "4854427b66616b655f666c61675f6c617965725f305f7a7632726365376b373968777d",
+    "fake_flag": "HTB{fake_flag_layer_0_zv2rce7k79hw}"
+  },
+  {
+    "layer": 1,
+    "obfuscation_type": "ROT13",
+    "data": "UGO{snxr_synt_ynlre_1_6sn30b472fdx}",
+    "fake_flag": "HTB{fake_flag_layer_1_6fa30o472sqk}"
+  },
+  {
+    "layer": 2,
+    "obfuscation_type": "BASE64",
+    "data": "SFRCe2Zha2VfZmxhZ19sYXllcl8yX3pjdWp5aDM0Zng2Yn0=",
+    "fake_flag": "HTB{fake_flag_layer_2_zcujyh34fx6b}"
+  },
+  {
+    "layer": 3,
+    "obfuscation_type": "XOR",
+    "data": "VJ\\ex\u007fu{Axr\u007fyAr\u007fg{lA-A(ls\u007ftwni-y+uc",
+    "fake_flag": "HTB{fake_flag_layer_3_6rmajipw3g5k}"
+  },
+  {
+    "layer": 4,
+    "obfuscation_type": "BINARY",
+    "data": "0100100001010100010000100111101101100110011000010110101101100101010111110110011001101100011000010110011101011111011011000110000101111001011001010111001001011111001101000101111101101011011011100011000101100111011011100111001000111000001110000110000100110011001100110011000001111101",
+    "fake_flag": "HTB{fake_flag_layer_4_kn1gnr88a330}"
+  }
+]

@@ -1,0 +1,306 @@
+{
+  "particles": [
+    {
+      "id": 0,
+      "state": "|0\u27e9",
+      "entangled_with": null,
+      "fake_flag_fragment": "ld7w8z8x"
+    },
+    {
+      "id": 1,
+      "state": "|-\u27e9",
+      "entangled_with": 49,
+      "fake_flag_fragment": "cny2e7rv"
+    },
+    {
+      "id": 2,
+      "state": "|i\u27e9",
+      "entangled_with": 0,
+      "fake_flag_fragment": "bof4ub14"
+    },
+    {
+      "id": 3,
+      "state": "|1\u27e9",
+      "entangled_with": 28,
+      "fake_flag_fragment": "zkh2qs7s"
+    },
+    {
+      "id": 4,
+      "state": "|1\u27e9",
+      "entangled_with": 43,
+      "fake_flag_fragment": "rv0l0xa1"
+    },
+    {
+      "id": 5,
+      "state": "|1\u27e9",
+      "entangled_with": 34,
+      "fake_flag_fragment": "614yhu1b"
+    },
+    {
+      "id": 6,
+      "state": "|-i\u27e9",
+      "entangled_with": 15,
+      "fake_flag_fragment": "462kf5f4"
+    },
+    {
+      "id": 7,
+      "state": "|+\u27e9",
+      "entangled_with": 43,
+      "fake_flag_fragment": "zyhixedg"
+    },
+    {
+      "id": 8,
+      "state": "|-\u27e9",
+      "entangled_with": 27,
+      "fake_flag_fragment": "40966why"
+    },
+    {
+      "id": 9,
+      "state": "|1\u27e9",
+      "entangled_with": 1,
+      "fake_flag_fragment": "0235le2q"
+    },
+    {
+      "id": 10,
+      "state": "|-i\u27e9",
+      "entangled_with": 45,
+      "fake_flag_fragment": "uhd9vjbm"
+    },
+    {
+      "id": 11,
+      "state": "|+\u27e9",
+      "entangled_with": 35,
+      "fake_flag_fragment": "s8gvbs9p"
+    },
+    {
+      "id": 12,
+      "state": "|1\u27e9",
+      "entangled_with": 36,
+      "fake_flag_fragment": "b4nbvz3v"
+    },
+    {
+      "id": 13,
+      "state": "|i\u27e9",
+      "entangled_with": 40,
+      "fake_flag_fragment": "dv72cjsv"
+    },
+    {
+      "id": 14,
+      "state": "|-i\u27e9",
+      "entangled_with": 17,
+      "fake_flag_fragment": "0kur4d5o"
+    },
+    {
+      "id": 15,
+      "state": "|-i\u27e9",
+      "entangled_with": 38,
+      "fake_flag_fragment": "tkssv9t5"
+    },
+    {
+      "id": 16,
+      "state": "|1\u27e9",
+      "entangled_with": 21,
+      "fake_flag_fragment": "nancsezd"
+    },
+    {
+      "id": 17,
+      "state": "|0\u27e9",
+      "entangled_with": 15,
+      "fake_flag_fragment": "p8qpgcl9"
+    },
+    {
+      "id": 18,
+      "state": "|-i\u27e9",
+      "entangled_with": 1,
+      "fake_flag_fragment": "r63wmzzt"
+    },
+    {
+      "id": 19,
+      "state": "|1\u27e9",
+      "entangled_with": 34,
+      "fake_flag_fragment": "xdf3qezv"
+    },
+    {
+      "id": 20,
+      "state": "|-i\u27e9",
+      "entangled_with": 33,
+      "fake_flag_fragment": "251ngxva"
+    },
+    {
+      "id": 21,
+      "state": "|0\u27e9",
+      "entangled_with": 32,
+      "fake_flag_fragment": "ysep6q6h"
+    },
+    {
+      "id": 22,
+      "state": "|1\u27e9",
+      "entangled_with": 40,
+      "fake_flag_fragment": "4pootdtw"
+    },
+    {
+      "id": 23,
+      "state": "|-\u27e9",
+      "entangled_with": 9,
+      "fake_flag_fragment": "ypv50uc2"
+    },
+    {
+      "id": 24,
+      "state": "|1\u27e9",
+      "entangled_with": 22,
+      "fake_flag_fragment": "68ahr2yy"
+    },
+    {
+      "id": 25,
+      "state": "|0\u27e9",
+      "entangled_with": 45,
+      "fake_flag_fragment": "ahyy3sgc"
+    },
+    {
+      "id": 26,
+      "state": "|0\u27e9",
+      "entangled_with": 19,
+      "fake_flag_fragment": "58pvg0hg"
+    },
+    {
+      "id": 27,
+      "state": "|+\u27e9",
+      "entangled_with": 32,
+      "fake_flag_fragment": "632t9884"
+    },
+    {
+      "id": 28,
+      "state": "|-i\u27e9",
+      "entangled_with": 16,
+      "fake_flag_fragment": "sezp8eez"
+    },
+    {
+      "id": 29,
+      "state": "|0\u27e9",
+      "entangled_with": 47,
+      "fake_flag_fragment": "eee8dzsl"
+    },
+    {
+      "id": 30,
+      "state": "|0\u27e9",
+      "entangled_with": 24,
+      "fake_flag_fragment": "6c6qpjw3"
+    },
+    {
+      "id": 31,
+      "state": "|i\u27e9",
+      "entangled_with": 37,
+      "fake_flag_fragment": "1rfyfnay"
+    },
+    {
+      "id": 32,
+      "state": "|1\u27e9",
+      "entangled_with": 3,
+      "fake_flag_fragment": "85difgtz"
+    },
+    {
+      "id": 33,
+      "state": "|i\u27e9",
+      "entangled_with": 24,
+      "fake_flag_fragment": "19q3musu"
+    },
+    {
+      "id": 34,
+      "state": "|+\u27e9",
+      "entangled_with": 11,
+      "fake_flag_fragment": "zw3iw98i"
+    },
+    {
+      "id": 35,
+      "state": "|+\u27e9",
+      "entangled_with": 35,
+      "fake_flag_fragment": "pt067nfn"
+    },
+    {
+      "id": 36,
+      "state": "|-\u27e9",
+      "entangled_with": 16,
+      "fake_flag_fragment": "uefonyd5"
+    },
+    {
+      "id": 37,
+      "state": "|-\u27e9",
+      "entangled_with": 42,
+      "fake_flag_fragment": "vbxuj696"
+    },
+    {
+      "id": 38,
+      "state": "|-i\u27e9",
+      "entangled_with": 38,
+      "fake_flag_fragment": "1peogkhk"
+    },
+    {
+      "id": 39,
+      "state": "|1\u27e9",
+      "entangled_with": 5,
+      "fake_flag_fragment": "y1dyya6l"
+    },
+    {
+      "id": 40,
+      "state": "|+\u27e9",
+      "entangled_with": 1,
+      "fake_flag_fragment": "argekb56"
+    },
+    {
+      "id": 41,
+      "state": "|-\u27e9",
+      "entangled_with": 13,
+      "fake_flag_fragment": "erte3r9x"
+    },
+    {
+      "id": 42,
+      "state": "|i\u27e9",
+      "entangled_with": 19,
+      "fake_flag_fragment": "9nv0ikrl"
+    },
+    {
+      "id": 43,
+      "state": "|-i\u27e9",
+      "entangled_with": 4,
+      "fake_flag_fragment": "ftq4hnqu"
+    },
+    {
+      "id": 44,
+      "state": "|1\u27e9",
+      "entangled_with": 1,
+      "fake_flag_fragment": "2wgkh3zh"
+    },
+    {
+      "id": 45,
+      "state": "|+\u27e9",
+      "entangled_with": 23,
+      "fake_flag_fragment": "20ce3l8m"
+    },
+    {
+      "id": 46,
+      "state": "|-i\u27e9",
+      "entangled_with": 1,
+      "fake_flag_fragment": "8upomptb"
+    },
+    {
+      "id": 47,
+      "state": "|0\u27e9",
+      "entangled_with": 47,
+      "fake_flag_fragment": "s6kjk5pk"
+    },
+    {
+      "id": 48,
+      "state": "|+\u27e9",
+      "entangled_with": 4,
+      "fake_flag_fragment": "pf446fhl"
+    },
+    {
+      "id": 49,
+      "state": "|i\u27e9",
+      "entangled_with": 4,
+      "fake_flag_fragment": "hc22hl9s"
+    }
+  ],
+  "states": [],
+  "measurements": []
+}

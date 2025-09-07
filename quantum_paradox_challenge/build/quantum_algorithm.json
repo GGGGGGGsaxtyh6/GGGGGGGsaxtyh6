@@ -1,0 +1,42 @@
+{
+  "name": "Quantum Paradox Solver",
+  "steps": [
+    {
+      "step": 1,
+      "description": "Initialize quantum register with 8 qubits",
+      "fake_result": "dr2yuaprn7n4otxl"
+    },
+    {
+      "step": 2,
+      "description": "Apply Hadamard gates to create superposition",
+      "fake_result": "2d1jt9fxjmuv440a"
+    },
+    {
+      "step": 3,
+      "description": "Implement quantum entanglement between qubits",
+      "fake_result": "mfsxbn38ifj4x2b7"
+    },
+    {
+      "step": 4,
+      "description": "Apply controlled operations based on input",
+      "fake_result": "s966kvlmwqs5ymqe"
+    },
+    {
+      "step": 5,
+      "description": "Measure quantum states",
+      "fake_result": "365w5x7uyb6oh49k"
+    },
+    {
+      "step": 6,
+      "description": "Decode measurement results",
+      "fake_result": "uar96iwx857ntczh"
+    },
+    {
+      "step": 7,
+      "description": "Extract flag from quantum state",
+      "fake_result": "rvjub0x9ianqnqp3"
+    }
+  ],
+  "fake_flag": "HTB{quantum_algorithm_solved_paradox}",
+  "description": "This algorithm looks like it solves the challenge, but it's fake!"
+}

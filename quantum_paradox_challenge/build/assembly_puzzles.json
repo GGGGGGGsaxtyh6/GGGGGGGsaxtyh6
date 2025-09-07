@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "description": "Assembly Puzzle 1 - Quantum State Analysis",
+    "code": "    or ebp, edx\n    and edi, ecx\n    shl ebx, 2\n    or esp, esp\n    cmp ebp, 0x30\n    mov edx, esp\n    sub ebx, esi\n    shr edi, 5\n    or esi, ecx\n    jmp label_2\n    xor ecx, edx\n    ret\n    call label_4\n    mov ecx, eax\n    cmp edx, 0x81\n    shr edi, 4\n    or ebx, esp\n    shl esp, 5\n    ret\n    add ebp, esp",
+    "fake_flag": "HTB{asm_puzzle_1_j2810qytzp}"
+  },
+  {
+    "id": 1,
+    "description": "Assembly Puzzle 2 - Quantum State Analysis",
+    "code": "    mov eax, esi\n    ret\n    or edi, ebp\n    shr esi, 3\n    shr ebp, 7\n    shr ecx, 2\n    cmp esp, 0xa6\n    cmp ecx, 0x55\n    shr edx, 8\n    mov ebp, ecx\n    or esi, ebx\n    ret\n    ret\n    shl edx, 3\n    or esi, edi\n    call label_6\n    jmp label_10\n    shl edx, 7\n    cmp esp, 0xf8\n    jmp label_2",
+    "fake_flag": "HTB{asm_puzzle_2_mznw7ptoe8}"
+  },
+  {
+    "id": 2,
+    "description": "Assembly Puzzle 3 - Quantum State Analysis",
+    "code": "    ret\n    shl eax, 3\n    sub esp, ecx\n    xor edi, ebp\n    call label_4\n    cmp esp, 0xe7\n    ret\n    xor esi, esi\n    or esi, eax\n    sub eax, esp\n    cmp edx, 0x02\n    sub ebx, edi\n    sub edx, edi\n    mov edx, ebp\n    sub ebp, esi\n    and eax, edx\n    mov edi, esi\n    cmp edi, 0xf9\n    shl ebx, 5\n    sub esp, esp",
+    "fake_flag": "HTB{asm_puzzle_3_861nq32a31}"
+  }
+]
