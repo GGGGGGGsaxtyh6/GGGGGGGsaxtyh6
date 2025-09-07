@@ -1,7 +1,0 @@
-{
-  "encrypted_flag": "SFRCe2NyeXB0b19hbmFseXNpc19jb21wbGV0ZX0=",
-  "key": "STUAf9ftlwHVrMxqeQbEMsFA3Y84owR0",
-  "algorithm": "AES-256",
-  "iv": "OYzUquZVfKMbbB08",
-  "fake_flag": "HTB{crypto_analysis_complete}"
-}
