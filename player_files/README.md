@@ -1,17 +1,17 @@
-# Challenge: Smurf's Hidden Treasure
+# Challenge: Smurf's Ultra-Protected Treasure
 
 ## Descripción
-Smurf ha escondido su tesoro en este binario. Encuentra la flag correcta usando ingeniería inversa.
+Smurf ha escondido su tesoro en este binario ultra-protegido. Encuentra la flag correcta usando ingeniería inversa ultra-avanzada.
 
 ## Uso
 ```bash
-./smurf_treasure HTB{tu_flag_aqui}
+./ultimate_challenge HTB{tu_flag_aqui}
 ```
 
 ## Información
-- Dificultad: Extremo
+- Dificultad: ULTRA-INSANE
 - Categoría: Reverse Engineering
-- Tiempo estimado: 2+ horas
+- Tiempo estimado: 4+ horas
 
 ## Flag
 La flag comienza con: `HTB{smurf_`
