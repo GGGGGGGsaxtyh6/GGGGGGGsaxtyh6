@@ -1,0 +1,9 @@
+
+# Pista 1: Análisis Estático
+# Usa el comando 'strings' para encontrar strings en el binario
+# La flag real comienza con: HTB{smurf_
+
+# Comandos útiles:
+# strings challenge | grep HTB
+# objdump -d challenge
+# hexdump -C challenge

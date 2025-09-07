@@ -1,0 +1,10 @@
+
+# Decoy File - No es la flag real
+# Este archivo es solo para confundir
+
+FLAG_FAKE_1=HTB{this_is_definitely_fake}
+FLAG_FAKE_2=HTB{not_the_real_flag_at_all}
+FLAG_FAKE_3=HTB{decoy_flag_here}
+
+# La flag real está en otro lugar
+# Pista: Busca en el binario compilado

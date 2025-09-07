@@ -1,0 +1,11 @@
+
+# Datos hexadecimales ofuscados
+# Estos datos contienen información sobre la flag real
+# Pero están ofuscados para dificultar el análisis
+
+OBFUSCATED_DATA_1=0x4854427b736d7572665f7734735f683372335f616e645f73305f7734735f793075725f666c34677d
+OBFUSCATED_DATA_2=0x536d75726620776173206865726520616e6420736f2077617320796f757220666c6167
+OBFUSCATED_DATA_3=0x4854427b736d7572665f7734735f683372335f616e645f73305f7734735f793075725f666c34677d
+
+# Para decodificar, convierte de hex a ASCII
+# Pista: La flag real está en estos datos

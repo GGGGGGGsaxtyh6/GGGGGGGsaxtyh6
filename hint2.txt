@@ -1,0 +1,9 @@
+
+# Pista 2: Análisis Dinámico
+# El binario tiene protecciones anti-debugging
+# Puedes bypasearlas modificando el código o usando gdb
+
+# Comandos útiles:
+# gdb ./challenge
+# (gdb) set environment LD_PRELOAD=/lib/x86_64-linux-gnu/libc.so.6
+# (gdb) run HTB{test}
