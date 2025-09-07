@@ -1,0 +1,20 @@
+nohup: ignoring input
+Admin password: f4b3f1d631ffc4b3b33ceff121f2e0d6621bfecc
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.30.0.2:5000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 443-077-249
+127.0.0.1 - - [07/Sep/2025 00:55:19] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [07/Sep/2025 00:55:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+127.0.0.1 - - [07/Sep/2025 00:55:26] "POST /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [07/Sep/2025 00:55:27] "GET /dashboard HTTP/1.1" 200 -
+127.0.0.1 - - [07/Sep/2025 00:55:30] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [07/Sep/2025 00:55:34] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [07/Sep/2025 00:55:37] "POST /admin HTTP/1.1" 200 -
+127.0.0.1 - - [07/Sep/2025 00:55:41] "POST /admin HTTP/1.1" 200 -
