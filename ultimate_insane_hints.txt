@@ -1,0 +1,33 @@
+# PISTAS PARA ULTIMATE INSANE VAULT
+# ==================================
+
+## Pista 1: Análisis de la Máquina Virtual Metamórfica
+- El binario implementa una máquina virtual metamórfica
+- Usa 'objdump -d ultimate_insane_vault' para ver el assembly
+- Busca las funciones de la VM: vm_load_const, vm_xor_reg, etc.
+
+## Pista 2: Control Flow Obfuscation
+- El flujo de control está ofuscado usando estados
+- Los handlers están en flow_handler_0, flow_handler_1, etc.
+- El estado actual se controla con current_flow_state
+
+## Pista 3: Cifrado Metamórfico
+- La flag está cifrada usando metamorphic_encrypt
+- El algoritmo es metamórfico y cambia en cada ejecución
+- Usa múltiples rondas de cifrado con claves metamórficas
+
+## Pista 4: Validación de la Flag
+- La función validate_metamorphic_flag es clave
+- Carga la entrada en la VM y ejecuta validación
+- La VM ejecuta instrucciones metamórficas
+
+## Pista 5: La Flag Real
+- La flag correcta es: HTB{smurf_w4s_h3r3_and_s0_w4s_y0ur_fl4g}
+- Pero debes encontrarla analizando la VM metamórfica
+- Las instrucciones están en vm->encrypted_instructions
+
+## Herramientas Recomendadas:
+- gdb para análisis dinámico de la VM metamórfica
+- objdump para análisis estático
+- radare2 para análisis avanzado
+- Análisis de la ejecución de la VM metamórfica
