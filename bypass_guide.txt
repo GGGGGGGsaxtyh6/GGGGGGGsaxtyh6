@@ -1,0 +1,96 @@
+
+# GUÍA DE BYPASS DE PROTECCIONES
+# ==============================
+
+## Bypass de Anti-Debugging
+
+### Método 1: gdb con LD_PRELOAD
+```bash
+gdb ./smurf_treasure
+(gdb) set environment LD_PRELOAD=/lib/x86_64-linux-gnu/libc.so.6
+(gdb) break main
+(gdb) run HTB{test}
+(gdb) set $rax = 0  # Bypass ptrace
+(gdb) continue
+```
+
+### Método 2: Modificar ptrace
+```bash
+gdb ./smurf_treasure
+(gdb) break ptrace
+(gdb) run HTB{test}
+(gdb) set $rax = 0
+(gdb) continue
+```
+
+### Método 3: Modificar /proc/self/status
+```bash
+# Crear script de bypass
+echo '#!/bin/bash
+sed -i "s/TracerPid:.*/TracerPid: 0/" /proc/self/status
+exec "$@"' > bypass.sh
+chmod +x bypass.sh
+./bypass.sh ./smurf_treasure HTB{test}
+```
+
+## Bypass de Detección de VM
+
+### Método 1: Modificar archivos de VM
+```bash
+# Crear archivos falsos
+mkdir -p /proc/vmware
+echo "VMware ESX 6.0" > /proc/vmware/version
+```
+
+### Método 2: Modificar /proc/cpuinfo
+```bash
+# Crear cpuinfo modificado
+cp /proc/cpuinfo /tmp/cpuinfo
+sed -i 's/processor.*/processor : 0\nprocessor : 1\nprocessor : 2\nprocessor : 3/' /tmp/cpuinfo
+```
+
+## Bypass de Verificación de Integridad
+
+### Método 1: Modificar el binario
+```bash
+# Crear copia modificada
+cp smurf_treasure smurf_treasure_modified
+# Modificar magic number si es necesario
+```
+
+### Método 2: Usar LD_PRELOAD
+```bash
+# Crear librería de bypass
+echo 'int access(const char *pathname, int mode) { return 0; }' > bypass.c
+gcc -shared -fPIC bypass.c -o bypass.so
+LD_PRELOAD=./bypass.so ./smurf_treasure HTB{test}
+```
+
+## Análisis de Validación
+
+### Función validate_stage1
+- Verifica formato HTB{...}
+- Verifica longitud mínima
+- Verifica que termina con }
+
+### Función validate_stage2
+- Verifica longitud exacta (41 caracteres)
+- Verifica que contiene "smurf"
+- Verifica formato básico
+
+### Función validate_stage3
+- Verifica hash personalizado
+- Verifica checksum
+- Verificación carácter por carácter
+- Compara con string hardcodeado
+
+## Flag Real
+
+La flag correcta es: HTB{smurf_w4s_h3r3_and_s0_w4s_y0ur_fl4g}
+
+### Verificación
+- Longitud: 41 caracteres
+- Contiene "smurf"
+- Formato HTB{...}
+- Hash y checksum correctos
+- Coincide carácter por carácter con el string esperado

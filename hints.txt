@@ -1,0 +1,36 @@
+# PISTAS PARA EL CHALLENGE INSANE
+# ================================
+
+## Pista 1: Análisis Estático
+- Usa 'strings smurf_treasure | grep HTB' para ver todas las flags
+- La flag real comienza con: HTB{smurf_
+- Hay muchas flags falsas, no te confundas
+- Usa 'objdump -d smurf_treasure' para ver el assembly
+
+## Pista 2: Análisis Dinámico
+- El binario tiene protecciones anti-debugging
+- Usa gdb para bypasear las protecciones
+- Comando: gdb ./smurf_treasure
+- Bypass: set environment LD_PRELOAD=/lib/x86_64-linux-gnu/libc.so.6
+
+## Pista 3: Protecciones
+- Anti-debugging: ptrace, /proc/self/status, timing attacks
+- VM detection: archivos típicos de VM
+- Sandbox detection: verificación de entorno
+- Integrity check: verificación del binario
+
+## Pista 4: Validación Multi-etapa
+- Etapa 1: Formato básico (HTB{...})
+- Etapa 2: Longitud y contenido (41 chars, contiene "smurf")
+- Etapa 3: Validación completa (hash, checksum, carácter por carácter)
+
+## Pista 5: La Flag Real
+- La flag correcta es: HTB{smurf_w4s_h3r3_and_s0_w4s_y0ur_fl4g}
+- Pero debes encontrarla por ti mismo usando reverse engineering
+- El algoritmo de validación está en las funciones validate_stage*
+
+## Herramientas Recomendadas:
+- strings, objdump, hexdump, file, readelf
+- gdb, strace, ltrace
+- radare2, ghidra, ida pro
+- Análisis estático y dinámico combinados

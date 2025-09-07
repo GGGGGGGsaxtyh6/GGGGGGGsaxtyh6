@@ -1,8 +1,0 @@
-
-# Pista 3: La Flag Real
-# La flag correcta es: HTB{smurf_w4s_h3r3_and_s0_w4s_y0ur_fl4g}
-# Pero debes encontrarla por ti mismo usando reverse engineering
-
-# El algoritmo de validación está en la función main()
-# Verifica que la entrada tenga exactamente 32 caracteres
-# Y que coincida con el patrón esperado
