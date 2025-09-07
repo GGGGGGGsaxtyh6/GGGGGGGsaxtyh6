@@ -1,0 +1,17 @@
+# FLAGS FALSAS - NO SON LA FLAG REAL
+# ===================================
+
+HTB{this_is_not_the_flag}
+HTB{ultimate_fake_flag}
+HTB{vault_access_denied}
+HTB{metamorphic_encryption_failed}
+HTB{vm_execution_error}
+HTB{control_flow_broken}
+HTB{quantum_state_collapsed}
+HTB{entanglement_failed}
+HTB{superposition_lost}
+HTB{quantum_tunnel_closed}
+
+# La flag real comienza con: HTB{
+# Tiene exactamente 41 caracteres
+# Está cifrada en la máquina virtual metamórfica
