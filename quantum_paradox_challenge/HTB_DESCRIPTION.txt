@@ -1,0 +1,16 @@
+Quantum Paradox Challenge
+
+Difficulty: INSANE
+Type: Reverse Engineering
+Expected Time: 2+ hours
+
+Description:
+A heavily obfuscated binary with multiple layers of protection and anti-debugging measures. The challenge contains several fake flags designed to mislead participants. Only one real flag exists, hidden deep within the binary and requiring advanced memory analysis to extract.
+
+The binary simulates a quantum computing application with complex obfuscation techniques. Participants must bypass anti-debugging protections, analyze obfuscated code, and perform memory forensics to find the real flag.
+
+Warning: Multiple fake flags are present. Only submit the real flag.
+
+Tools recommended: IDA Pro, Ghidra, GDB, hex editor
+
+Download: https://gofile.io/d/VbT3YT
