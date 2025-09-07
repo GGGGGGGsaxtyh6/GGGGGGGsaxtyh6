@@ -1,0 +1,87 @@
+🔥 CHALLENGE INSANE: SMURF'S HIDDEN TREASURE
+==============================================
+
+📋 Información del Challenge:
+- Nombre: Smurf's Hidden Treasure
+- Categoría: Reverse Engineering
+- Dificultad: INSANE 🔥
+- Tiempo estimado: 2+ horas
+- Flag real: HTB{smurf_w4s_h3r3_and_s0_w4s_y0ur_fl4g}
+- Flag comienza con: HTB{smurf_
+
+🛡️ Protecciones Implementadas:
+- Anti-debugging (múltiples métodos)
+- Detección de VM/Sandbox
+- Verificación de integridad
+- Validación multi-etapa
+- Ofuscación de strings y datos
+- Flags falsas con pistas progresivas
+
+🔧 Herramientas Recomendadas:
+- Análisis estático: strings, objdump, hexdump, file, readelf
+- Análisis dinámico: gdb, strace, ltrace
+- Herramientas avanzadas: radare2, ghidra, ida pro
+
+🚀 Cómo Empezar:
+1. Lee README_INSANE.md para información completa
+2. Usa analyze.sh para análisis inicial
+3. Lee hints.txt para pistas básicas
+4. Lee advanced_hints.txt para pistas técnicas
+5. Usa bypass_guide.txt para bypass de protecciones
+6. Combina análisis estático y dinámico
+
+🎯 Para Resolver el Challenge:
+1. Identifica que es un challenge de reverse engineering
+2. Usa herramientas apropiadas de análisis
+3. Bypasea las protecciones anti-debugging
+4. Distingue entre flags falsas y la real
+5. Entiende el sistema de validación multi-etapa
+6. Encuentra la flag correcta usando reverse engineering
+
+⚠️ Notas Importantes:
+- Todas las flags en el binario son FALSAS excepto la real
+- La flag real comienza con HTB{smurf_
+- Se requiere conocimiento avanzado de assembly y debugging
+- Este es un challenge de nivel INSANE
+- Tiempo estimado: 2+ horas para hackers experimentados
+
+🏆 Criterios de Éxito:
+✅ Bypass de protecciones anti-debugging
+✅ Análisis estático y dinámico
+✅ Identificación de flags falsas
+✅ Comprensión del sistema de validación
+✅ Encontrar la flag correcta
+
+🎓 Habilidades Desarrolladas:
+- Análisis estático avanzado de binarios
+- Análisis dinámico con debuggers
+- Bypass de protecciones anti-debugging
+- Detección y bypass de VM/Sandbox
+- Ingeniería inversa de algoritmos complejos
+- Uso de herramientas profesionales de reverse engineering
+
+📁 Archivos del Challenge:
+- smurf_treasure (binario principal - 732K)
+- smurf_treasure.c (código fuente)
+- README_INSANE.md (documentación completa)
+- hints.txt (pistas básicas)
+- advanced_hints.txt (pistas técnicas avanzadas)
+- bypass_guide.txt (guía de bypass de protecciones)
+- analyze.sh (script de análisis inicial)
+- advanced_analysis.sh (script de análisis avanzado)
+- fake_flags.txt (lista de flags falsas)
+- test_insane.sh (script de prueba)
+- show_challenge.sh (script de presentación)
+- build_insane.sh (script de compilación)
+
+🔥 ¡Este challenge está diseñado para hackers de nivel profesional!
+💡 ¡Buena suerte con el reverse engineering!
+
+Para extraer el challenge:
+tar -xzf smurf_treasure_challenge.tar.gz
+
+Para ejecutar el challenge:
+./smurf_treasure HTB{tu_flag_aqui}
+
+Para ver información completa:
+./show_challenge.sh
