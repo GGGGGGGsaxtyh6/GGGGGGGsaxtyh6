@@ -1,0 +1,33 @@
+# PISTAS PARA QUANTUM VAULT
+# =========================
+
+## Pista 1: Análisis de la Máquina Virtual
+- El binario implementa una máquina virtual cuántica
+- Usa 'objdump -d quantum_vault' para ver el assembly
+- Busca las funciones de la VM: vm_load_const, vm_xor_reg, etc.
+
+## Pista 2: Control Flow Flattening
+- El flujo de control está aplanado usando estados
+- Los handlers están en flow_handler_0, flow_handler_1, etc.
+- El estado actual se controla con current_flow_state
+
+## Pista 3: Cifrado Cuántico
+- La flag está cifrada usando quantum_encrypt
+- El algoritmo es reversible con quantum_decrypt_flag
+- Usa 16 rondas de cifrado con claves rotativas
+
+## Pista 4: Validación de la Flag
+- La función validate_quantum_flag es clave
+- Carga la entrada en la VM y ejecuta validación
+- La VM ejecuta instrucciones ofuscadas
+
+## Pista 5: La Flag Real
+- La flag correcta es: HTB{smurf_w4s_h3r3_and_s0_w4s_y0ur_fl4g}
+- Pero debes encontrarla analizando la VM
+- Las instrucciones están en vm->instructions[]
+
+## Herramientas Recomendadas:
+- gdb para análisis dinámico de la VM
+- objdump para análisis estático
+- radare2 para análisis avanzado
+- Análisis de la ejecución de la VM

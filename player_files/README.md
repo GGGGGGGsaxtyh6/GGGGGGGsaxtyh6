@@ -1,19 +1,19 @@
-# Challenge: Smurf's Ultra-Protected Treasure
+# Challenge: Quantum Vault
 
 ## Descripción
-Smurf ha escondido su tesoro en este binario ultra-protegido. Encuentra la flag correcta usando ingeniería inversa ultra-avanzada.
+Un banco cuántico ha implementado un sistema de seguridad ultra-avanzado. El vault utiliza una máquina virtual cuántica con cifrado inspirado en mecánica cuántica. Encuentra la clave para acceder al vault.
 
 ## Uso
 ```bash
-./ultimate_challenge HTB{tu_flag_aqui}
+./quantum_vault HTB{tu_flag_aqui}
 ```
 
 ## Información
-- Dificultad: ULTRA-INSANE
+- Dificultad: EXTREME
 - Categoría: Reverse Engineering
-- Tiempo estimado: 4+ horas
+- Tiempo estimado: 3+ horas
 
 ## Flag
-La flag comienza con: `HTB{smurf_`
+La flag comienza con: `HTB{`
 
 ¡Buena suerte!
