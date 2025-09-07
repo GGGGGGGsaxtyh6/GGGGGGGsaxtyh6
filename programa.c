@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("me cago en tus muertos");
+    printf("idiota dejalo por el texto");
     return 0;
 }
