@@ -1,0 +1,25 @@
+=== QUANTUM CIPHER RESEARCH TOOL CHALLENGE ===
+
+NIVEL: INSANE
+TIEMPO ESTIMADO: 3 horas
+OBJETIVO: Encontrar el flag oculto
+
+INSTRUCCIONES:
+1. Ejecuta: ./quantum_cipher
+2. Explora todas las opciones del menú
+3. Busca pistas sutiles en el comportamiento
+4. Usa técnicas de reversing para superar las protecciones
+5. Encuentra el flag oculto
+
+HERRAMIENTAS RECOMENDADAS:
+- GDB para debugging
+- objdump para análisis estático
+- strace para monitoreo de syscalls
+
+PISTAS:
+- Las pistas están ocultas en el comportamiento del programa
+- Cada opción del menú puede revelar información importante
+- Presta atención a los mensajes de "ANOMALY"
+- El flag está protegido por múltiples capas
+
+¡Buena suerte en tu viaje cuántico!
