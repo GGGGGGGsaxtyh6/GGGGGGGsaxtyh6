@@ -1,0 +1,11 @@
+{
+  "challenge_name": "QuantumCipher Research Tool",
+  "level": "INSANE",
+  "estimated_time": "3 hours",
+  "category": "Reverse Engineering",
+  "difficulty": "Expert",
+  "protections": 15,
+  "flag_format": "HTB{...}",
+  "tools_required": ["GDB", "objdump", "strace"],
+  "description": "Advanced quantum cryptography research tool with multiple protection layers"
+}

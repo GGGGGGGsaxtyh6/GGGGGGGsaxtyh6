@@ -1,0 +1,31 @@
+=== ESTADÍSTICAS DEL RETO ===
+
+PROTECCIONES IMPLEMENTADAS: 15
+- Anti-debugging cuántico
+- Entrelazamiento de memoria
+- Decoherencia temporal
+- Superposición de estados
+- Medición cuántica
+- Túnel cuántico
+- Interferencia destructiva
+- Colapso de función de onda
+- Teleportación cuántica
+- Computación adiabática
+- Corrección de errores cuánticos
+- Inyección de ruido cuántico
+- Paralelismo cuántico
+- Criptografía post-cuántica
+- Simulación cuántica
+
+CARACTERÍSTICAS:
+- Software realista con múltiples módulos
+- Lógica en capas con desbloqueo gradual
+- Pistas sutiles distribuidas
+- Flag protegido tras múltiples barreras
+- Tiempo estimado: 3 horas
+
+NIVEL DE DIFICULTAD: INSANE
+- Requiere habilidades expertas en reversing
+- Múltiples técnicas de bypass necesarias
+- Comprensión profunda del funcionamiento
+- Persistencia y creatividad requeridas
