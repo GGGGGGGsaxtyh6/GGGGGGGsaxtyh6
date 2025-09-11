@@ -1,0 +1,33 @@
+{
+  "name": "WebApp Development Environment",
+  "description": "Entorno para desarrollo de aplicación web con HTML, CSS y JavaScript",
+  "setup": {
+    "commands": [
+      "echo 'Configurando entorno de desarrollo...'",
+      "echo 'Proyecto WebApp - Sistema completo con autenticación, posts, tareas y chat'"
+    ]
+  },
+  "tasks": {
+    "dev": {
+      "description": "Iniciar servidor de desarrollo local",
+      "command": "python -m http.server 8000",
+      "background": true
+    },
+    "test": {
+      "description": "Abrir aplicación en navegador",
+      "command": "start index.html"
+    }
+  },
+  "environment": {
+    "type": "web",
+    "framework": "vanilla-js",
+    "dependencies": [],
+    "ports": [8000]
+  },
+  "instructions": [
+    "Este es un proyecto web vanilla (HTML, CSS, JavaScript) que no requiere instalación de dependencias",
+    "Para ejecutar: abrir index.html en navegador o usar servidor local",
+    "La aplicación incluye: autenticación, sistema de posts, gestión de tareas y chat global",
+    "Datos almacenados en localStorage del navegador"
+  ]
+}
