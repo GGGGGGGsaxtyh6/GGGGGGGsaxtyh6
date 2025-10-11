@@ -1,0 +1,28 @@
+{
+  "name": "jsonata-security-demo",
+  "version": "1.0.0",
+  "description": "Demostración de vulnerabilidad CVE-2024-27307 en JSONata y su mitigación",
+  "type": "module",
+  "main": "hardened-service.js",
+  "scripts": {
+    "vulnerable": "node vulnerable-service.js",
+    "secure": "node hardened-service.js",
+    "exploit": "node exploit-demo.js",
+    "test": "node test-security.js"
+  },
+  "keywords": [
+    "jsonata",
+    "security",
+    "cve-2024-27307",
+    "prototype-pollution",
+    "expression-injection"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jsonata": "^2.0.3",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {}
+}
