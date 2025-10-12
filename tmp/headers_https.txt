@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Server: nginx/1.22.0 (Ubuntu)
+Date: Sun, 12 Oct 2025 08:56:49 GMT
+Content-Type: text/html; charset=UTF-8
+Content-Length: 33883
+Connection: keep-alive
+X-Powered-By: Express
+Accept-Ranges: bytes
+Cache-Control: public, max-age=0
+Last-Modified: Sat, 24 May 2025 15:18:37 GMT
+ETag: W/"845b-19702dfe4c8"
+
