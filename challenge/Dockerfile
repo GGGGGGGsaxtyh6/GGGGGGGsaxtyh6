@@ -17,6 +17,9 @@ RUN sed -i 's/deb.debian.org/archive.debian.org/g' /etc/apt/sources.list && \
     docker-php-ext-install mysqli && \
     apt-get clean
 
+# Add motherland.com to hosts file
+RUN echo "127.0.0.1 motherland.com" >> /etc/hosts
+
 # Install Smarty using Composer
 RUN curl -sS https://getcomposer.org/installer | php && \
     mv composer.phar /usr/local/bin/composer && \
