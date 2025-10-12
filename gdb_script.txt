@@ -1,0 +1,8 @@
+b *win+74
+r
+c
+si
+si
+si
+x/10gx $rsp
+quit
