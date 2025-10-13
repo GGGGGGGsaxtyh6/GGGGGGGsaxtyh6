@@ -1,0 +1,79 @@
+    238 /lib64/ld-linux-x86-64.so.2
+    4a1 libc.so.6
+    4ab fopen
+    4b1 strncmp
+    4b9 __isoc99_scanf
+    4c8 puts
+    4cd __stack_chk_fail
+    4de stdin
+    4e4 printf
+    4eb fgets
+    4f1 getchar
+    4f9 stdout
+    500 fclose
+    507 malloc
+    50e __cxa_finalize
+    51d setbuf
+    524 __libc_start_main
+    536 free
+    53b GLIBC_2.7
+    545 GLIBC_2.4
+    54f GLIBC_2.2.5
+    55b _ITM_deregisterTMCloneTable
+    577 __gmon_start__
+    586 _ITM_registerTMCloneTable
+   1000 AWAVI
+   1007 AUATL
+   105a []A\A]A^A_
+   1088 You have not stored any notes
+   10a6 Your stored small note:
+   10c2 Your stored medium note:
+   10db Your stored large note:
+   10f8 Enter the size of your small note:
+   111e Enter small note data:
+   1135 Invalid small note size
+   1150 Enter the size of your medium note:
+   1174 Enter medium note data:
+   118c Invalid medium note size
+   11a8 Enter the size of your large note:
+   11cb Enter large note data:
+   11e2 Invalid large note size
+   11fc flag.txt
+   1208 Sorry, flag is currently unavailable
+   122d Commands:
+   1237 	print - print all notes
+   1250 	small - create small note
+   126b 	medium - create medium note
+   1288 	large - create large note
+   12a3 	flag - print the flag
+   12ba Enter command:
+   12c9 print
+   12cf small
+   12d5 medium
+   12dc large
+   12e2 flag
+   12e7 Invalid command
+   13cf ;*3$"
+   2011 .shstrtab
+   201b .interp
+   2023 .note.ABI-tag
+   2031 .note.gnu.build-id
+   2044 .gnu.hash
+   204e .dynsym
+   2056 .dynstr
+   205e .gnu.version
+   206b .gnu.version_r
+   207a .rela.dyn
+   2084 .rela.plt
+   208e .init
+   2094 .plt.got
+   209d .text
+   20a3 .fini
+   20a9 .rodata
+   20b1 .eh_frame_hdr
+   20bf .eh_frame
+   20c9 .init_array
+   20d5 .fini_array
+   20e1 .dynamic
+   20ea .data
+   20f0 .bss
