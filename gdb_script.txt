@@ -1,0 +1,8 @@
+set disassembly-flavor intel
+break *0x080484b8
+run < /tmp/exploit_input
+info registers
+x/40wx $esp
+continue
+info registers
+x/40wx $esp
