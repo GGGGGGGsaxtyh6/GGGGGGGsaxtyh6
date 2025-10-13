@@ -1,0 +1,11 @@
+set disable-randomization off
+break vuln
+run
+1
+TESTNAME
+3
+FEEDBACK
+info frame
+x/40gx $rbp-750
+x/10gx $rbp
+quit
