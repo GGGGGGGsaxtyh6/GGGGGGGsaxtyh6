@@ -1,0 +1,8 @@
+HTTP/1.1 500 INTERNAL SERVER ERROR
+Server: nginx
+Date: Tue, 14 Oct 2025 09:00:24 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-XSS-Protection: 0
+
