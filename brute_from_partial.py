@@ -1,6 +1,4 @@
-from sympy.ntheory import discrete_log
 from Crypto.Util.number import bytes_to_long, long_to_bytes
-import gmpy2
 
 B = 3120090466259654766880909097573553950487818021670727992039931232537173262599219376624291488340607228938989670215080876932583555412966984946786628621917436142053528648425399877486481618672307477414787846984446437445450282569184963
 A = 246920531455433048826966670968977027196902794022573095007307132382393013927558904839982249967656424317118051446771969623490992917094197975459553923550187
@@ -16,92 +14,74 @@ known_full = b"good luck lmao ictf{"
 chunks_known = [bytes_to_long(known_full[i:i+10]) for i in range(0, len(known_full), 10)]
 target = output_list[0] ^ chunks_known[0]
 
-print("Calculando log discreto con p3...")
-try:
-    result3 = discrete_log(p3, target % p3, B % p3)
-    print(f"x ≡ {result3} (mod {p3-1})")
-    print(f"¡Éxito con p3!")
+# Del script anterior, sabemos que módulo p1-1 y p2-1:
+x_mod_p1 = 3223629359291819296
+x_mod_p2 = 1228725530983745536
+
+print("Sabemos que:")
+print(f"  x ≡ {x_mod_p1} (mod {p1-1})")
+print(f"  x ≡ {x_mod_p2} (mod {p2-1})")
+print()
+
+# El exponente es de la forma x_mod_p1 + k*(p1-1)
+# Probemos valores de k pequeños
+
+print("Probando valores de k para x = x_mod_p1 + k*(p1-1)...")
+
+base_x = x_mod_p1
+step = p1 - 1
+
+for k in range(1000000):
+    x = base_x + k * step
     
-    # Ahora tengo 3 ecuaciones. Intentar CRT con las 3
-    x_mod_p1 = 3223629359291819296
-    x_mod_p2 = 1228725530983745536
-    x_mod_p3 = result3
+    # Verificar que también satisface x ≡ x_mod_p2 (mod p2-1)
+    if x % (p2-1) != x_mod_p2:
+        continue
     
-    # CRT generalizado
-    x = x_mod_p1
-    modulo = p1 - 1
-    
-    for r, n in [(x_mod_p2, p2-1), (x_mod_p3, p3-1)]:
-        g = int(gmpy2.gcd(modulo, n))
-        
-        if (r - x) % g != 0:
-            print(f"ERROR: inconsistencia detectada")
-            break
-        
-        modulo_red = modulo // g
-        n_red = n // g
-        diff = (r - x) // g
-        
-        inv = int(gmpy2.invert(modulo_red, n_red))
-        k = (diff * inv) % n_red
-        
-        x = x + k * modulo
-        modulo = (modulo * n) // g
-    
-    print(f"\nCRT con 3 primos: x ≡ {x} (mod lcm)")
-    print(f"x bits: {x.bit_length()}")
-    
-    # Verificar
+    # Verificar el exponente completo
     test = pow(B, x, m)
     if test == target:
-        print("¡VERIFICADO!")
-        exp = x
-    else:
-        print("Probando con múltiplos...")
-        found = False
-        for k in range(10000):
-            test_x = x + k * modulo
-            test = pow(B, test_x, m)
-            if test == target:
-                print(f"¡Encontrado con k={k}!")
-                exp = test_x
-                found = True
-                break
-        if not found:
-            exp = x
-    
-    # Buscar low bits
-    print(f"\nExponente: {exp}")
-    for low_bits in range(65536):
-        full_state = exp | low_bits
-        temp_state = full_state
-        match = True
+        print(f"\n¡EXPONENTE ENCONTRADO! k = {k}")
+        print(f"x = {x}")
+        print(f"Bits: {x.bit_length()}")
         
-        for i in range(2):
-            keystream = pow(B, temp_state - (temp_state & 0xffff), m)
-            expected = output_list[i] ^ chunks_known[i]
-            if keystream != expected:
-                match = False
-                break
-            temp_state = pow(pow(A, temp_state, m) ^ B, e, m)
-        
-        if match:
-            print(f"LOW BITS = {low_bits}")
-            
-            plaintext = b""
+        # Buscar últimos 16 bits
+        print("\nBuscando últimos 16 bits del estado...")
+        for low_bits in range(65536):
+            full_state = x | low_bits
             temp_state = full_state
-            for out in output_list:
+            match = True
+            
+            for i in range(min(2, len(chunks_known))):
                 keystream = pow(B, temp_state - (temp_state & 0xffff), m)
-                chunk_val = out ^ keystream
-                chunk_bytes = long_to_bytes(chunk_val)
-                plaintext += chunk_bytes
+                expected = output_list[i] ^ chunks_known[i]
+                if keystream != expected:
+                    match = False
+                    break
                 temp_state = pow(pow(A, temp_state, m) ^ B, e, m)
             
-            print("\n" + "="*60)
-            print(plaintext.decode('utf-8', errors='ignore'))
-            print("="*60)
-            break
+            if match:
+                print(f"¡LOW BITS = {low_bits}!")
+                print(f"Estado completo: {full_state}")
+                
+                plaintext = b""
+                temp_state = full_state
+                for out in output_list:
+                    keystream = pow(B, temp_state - (temp_state & 0xffff), m)
+                    chunk_val = out ^ keystream
+                    chunk_bytes = long_to_bytes(chunk_val)
+                    plaintext += chunk_bytes
+                    temp_state = pow(pow(A, temp_state, m) ^ B, e, m)
+                
+                print("\n" + "="*60)
+                print(plaintext.decode('utf-8', errors='ignore'))
+                print("="*60)
+                exit(0)
+        
+        print("No se encontraron los últimos 16 bits")
+        break
     
-except Exception as e:
-    print(f"Error con p3: {e}")
-    print("Tardó demasiado")
+    if k % 10000 == 0 and k > 0:
+        print(f"  k = {k}...")
+
+print("\nNo encontrado en el rango")
