@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Wed Oct 15 13:00:59 2025 as: nmap -Pn -n -T4 -p16385-32768 -oA /workspace/scans/tcp_full_2 94.237.48.12 -->
+<nmaprun scanner="nmap" args="nmap -Pn -n -T4 -p16385-32768 -oA /workspace/scans/tcp_full_2 94.237.48.12" start="1760533259" startstr="Wed Oct 15 13:00:59 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="16384" services="16385-32768"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1760533259" endtime="1760533390"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="94.237.48.12" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="16332">
+<extrareasons reason="conn-refused" count="16332" proto="tcp" ports="16385-30146,30148-30238,30240-30279,30281-30301,30303-30355,30357-30402,30404-30569,30571-30586,30588-30595,30597-30612,30614-30620,30622-30641,30643-30651,30653-30727,30729-30907,30909-30913,30915-30944,30946-30958,30960-31038,31040-31115,31117-31238,31240-31254,31256-31331,31333-31350,31352-31438,31440-31479,31481-31483,31485-31506,31508-31561,31563-31592,31594-31690,31692-31761,31763-31766,31768-31862,31864-31909,31911-31932,31934-31983,31985-31989,31991-32044,32046-32057,32059-32168,32170-32211,32213-32277,32279-32288,32290-32323,32325-32468,32470-32490,32492-32535,32537-32614,32616-32688,32690-32749,32751-32758,32760-32768"/>
+</extraports>
+<port protocol="tcp" portid="30147"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30239"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30280"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30302"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30356"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30403"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30570"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30587"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30596"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30613"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30621"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30642"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30652"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30728"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30908"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30914"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30945"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="30959"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31039"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31116"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31239"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31255"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31332"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31351"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31439"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31480"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31484"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31507"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31562"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31593"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31691"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31762"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31767"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31863"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31910"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31933"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31984"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="31990"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32045"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32058"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32169"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32212"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32278"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32289"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32324"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32469"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32491"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32536"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32615"><state state="filtered" reason="no-response" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32689"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32750"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="32759"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+</ports>
+<times srtt="156902" rttvar="1156" to="161526"/>
+</host>
+<runstats><finished time="1760533390" timestr="Wed Oct 15 13:03:10 2025" summary="Nmap done at Wed Oct 15 13:03:10 2025; 1 IP address (1 host up) scanned in 130.70 seconds" elapsed="130.70" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

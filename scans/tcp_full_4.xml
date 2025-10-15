@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Wed Oct 15 13:01:17 2025 as: nmap -Pn -n -T4 -p49153-65535 -oA /workspace/scans/tcp_full_4 94.237.48.12 -->
+<nmaprun scanner="nmap" args="nmap -Pn -n -T4 -p49153-65535 -oA /workspace/scans/tcp_full_4 94.237.48.12" start="1760533277" startstr="Wed Oct 15 13:01:17 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="16383" services="49153-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1760533277" endtime="1760533484"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="94.237.48.12" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="16165">
+<extrareasons reason="conn-refused" count="16165" proto="tcp" ports="49153-49207,49209-49240,49243-49245,49247-49248,49250-49274,49276-49301,49303-49336,49338-49361,49363-49443,49445-49503,49505-49625,49627-49751,49753,49755-49843,49845-49870,49872-49990,49992-50019,50021-50081,50083-50215,50217-50261,50263-50345,50347-50349,50351-50444,50446-50478,50480-50544,50546-50557,50559-50610,50612-50614,50616-50634,50636-50682,50684-50724,50726-50753,50755-50852,50854-50855,50857-50863,50865-50870,50872-50995,50997-51028,51030-51071,51073-51101,51103-51137,51139-51168,51170-51296,51298-51303,51305-51375,51377-51467,51469-51475,51477-51494,51496-51582,51584-51595,51597-51675,51677-51748,51750-51789,51791-51823,51825,51827-51872,51874-51937,51939-51968,51970-52001,52003-52069,52071-52095,52097-52110,52112-52180,52182-52260,52262-52285,52287-52446,52448-52480,52482-52531,52533-52604,52607-52747,52749-52758,52760-52765,52767-52801,52803-52838,52840-52860,52862,52864-52899,52901-52940,52942-53067,53069-53090,53092-53124,53126-53141,53143-53230,53232-53253,53255-53394,53396-53399,53401-53480,53482-53506,53508-53511,53513,53515-53530,53532-53579,53581-53674,53676-53913,53915,53917-53926,53928-53971,53973-54048,54050-54066,54068-54195,54197-54408,54410-54468,54470-54534,54536-54556,54558-54561,54563-54575,54577-54608,54610-54627,54629-54674,54676-54710,54712-54715,54717-54721,54723-54729,54731-54902,54904-54925,54927-54928,54930-54950,54952,54954-55178,55180-55297,55299-55301,55303-55315,55317-55373,55375-55391,55393-55425,55427-55446,55448-55500,55502-55508,55510-55642,55644-55758,55760-55770,55772-55789,55791-55819,55821-55883,55885-55907,55909-55935,55937-55998,56000-56037,56039-56073,56075-56076,56078-56120,56123-56127,56129-56172,56174-56184,56186-56191,56193-56299,56301-56368,56370-56407,56409-56436,56438-56451,56453-56471,56473-56570,56572-56578,56580-56603,56605-56639,56641-56664,56666-56669,56671-56748,56750-56830,56832-56836,56838-56864,56866-56886,56888-56919,56922-56974,56976-56978,56980-56999,57001-57094,57096-57103,57105-57240,57242-57312,57314-57378,57380-57422,57424-57472,57475-57530,57532-57599,57601-57674,57676-57745,57747-57760,57762-58007,58009-58095,58097-58123,58125-58166,58168-58182,58184-58200,58202-58281,58283-58302,58304-58367,58369-58416,58418-58477,58479-58481,58483-58516,58518-58638,58640-58643,58645-58655,58657-58741,58743-58761,58763-58788,58790-58995,58997-59046,59048-59133,59135-59214,59216-59219,59221-59260,59262-59308,59310-59353,59355-59437,59439-59493,59495-59514,59517-59552,59554-59642,59644-59667,59669-59737,59739-65535"/>
+</extraports>
+<extraports state="filtered" count="30">
+<extrareasons reason="no-response" count="30" proto="tcp" ports="49241-49242,49752,50611,50725,50864,51072,51102,51468,51596,52481,53125,53400,53507,53972,54730,55392,55426,56121,56831,56975,57104,57473,57531,57675,58201,58282,58368,58639,58789"/>
+</extraports>
+<port protocol="tcp" portid="49208"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49246"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49249"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49275"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49302"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49337"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49362"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49444"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49504"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49626"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49754"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49844"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49871"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49991"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50020"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50082"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50216"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50262"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50346"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50350"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50445"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50479"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50545"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50558"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50615"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50635"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50683"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50754"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50853"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50856"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50871"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="50996"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51029"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51138"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51169"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51297"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51304"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51376"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51476"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51495"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51583"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51676"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51749"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51790"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51824"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51826"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51873"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51938"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="51969"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52002"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52070"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52096"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52111"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52181"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52261"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52286"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52447"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52532"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52605"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52606"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52748"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52759"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52766"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52802"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52839"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52861"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52863"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52900"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="52941"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53068"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53091"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53142"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53231"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53254"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53395"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53481"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53512"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53514"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53531"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53580"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53675"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53914"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53916"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="53927"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54049"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54067"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54196"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54409"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54469"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54535"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54557"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54562"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54576"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54609"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54628"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54675"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54711"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54716"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54722"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54903"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54926"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54929"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54951"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="54953"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55179"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55298"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55302"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55316"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55374"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55447"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55501"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55509"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55643"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55759"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55771"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55790"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55820"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55884"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55908"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55936"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="55999"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56038"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56074"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56077"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56122"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56128"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56173"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56185"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56192"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56300"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56369"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56408"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56437"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56452"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56472"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56571"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56579"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56604"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56640"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56665"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56670"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56749"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56837"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56865"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56887"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56920"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56921"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="56979"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="57000"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="57095"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="57241"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="57313"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="57379"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="57423"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="57474"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="57600"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="57746"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="57761"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58008"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58096"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58124"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58167"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58183"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58303"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58417"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58478"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58482"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58517"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58644"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58656"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58742"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58762"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="58996"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59047"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59134"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59215"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59220"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59261"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59309"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59354"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59438"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59494"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59515"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59516"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59553"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59643"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59668"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="59738"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+</ports>
+<times srtt="156901" rttvar="982" to="160829"/>
+</host>
+<runstats><finished time="1760533484" timestr="Wed Oct 15 13:04:44 2025" summary="Nmap done at Wed Oct 15 13:04:44 2025; 1 IP address (1 host up) scanned in 206.51 seconds" elapsed="206.51" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
