@@ -620,13 +620,16 @@ WINE REGISTRY Version 2
 [Software\\Wine\\DllOverrides] 1760528176
 #time=1dc3dc7eaf4e854
 
-[Software\\Wine\\Fonts] 1760528176
-#time=1dc3dc7eaf2fbe8
+[Software\\Wine\\FileOpenAssociations] 1760529860
+#time=1dc3dcbd67be7ac
+
+[Software\\Wine\\Fonts] 1760529859
+#time=1dc3dcbd6574172
 "Codepages"="1252,437"
 "LogPixels"=dword:00000060
 
-[Software\\Wine\\Fonts\\External Fonts] 1760528176
-#time=1dc3dc7eaf34490
+[Software\\Wine\\Fonts\\External Fonts] 1760529859
+#time=1dc3dcbd6579b9a
 "DejaVu Sans (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSans.ttf"
 "DejaVu Sans Bold (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSans-Bold.ttf"
 "DejaVu Sans Bold Oblique (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\dejavu\\DejaVuSans-BoldOblique.ttf"
@@ -666,12 +669,14 @@ WINE REGISTRY Version 2
 "Liberation Serif Bold Italic (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\liberation\\LiberationSerif-BoldItalic.ttf"
 "Liberation Serif Italic (TrueType)"="Z:\\usr\\share\\fonts\\truetype\\liberation\\LiberationSerif-Italic.ttf"
 "Marlett (TrueType)"="Z:\\usr\\share\\wine\\fonts\\marlett.ttf"
-"Noto Color Emoji"="Z:\\usr\\share\\fonts\\truetype\\noto\\NotoColorEmoji.ttf"
 "Symbol (TrueType)"="Z:\\usr\\share\\wine\\fonts\\symbol.ttf"
 "Tahoma (TrueType)"="Z:\\usr\\share\\wine\\fonts\\tahoma.ttf"
 "Tahoma Bold (TrueType)"="Z:\\usr\\share\\wine\\fonts\\tahomabd.ttf"
 "Webdings (TrueType)"="Z:\\usr\\share\\wine\\fonts\\webdings.ttf"
 "Wingdings (TrueType)"="Z:\\usr\\share\\wine\\fonts\\wingding.ttf"
+
+[Software\\Wine\\MenuFiles] 1760529860
+#time=1dc3dcbd68072ea
 
 [Volatile Environment] 1760528189
 #time=1dc3dc7f27df322
