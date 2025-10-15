@@ -1,0 +1,60 @@
+# Nmap 7.95 scan initiated Wed Oct 15 13:00:59 2025 as: nmap -Pn -n -T4 -p16385-32768 -oA /workspace/scans/tcp_full_2 94.237.48.12
+Warning: 94.237.48.12 giving up on port because retransmission cap hit (6).
+Nmap scan report for 94.237.48.12
+Host is up (0.16s latency).
+Not shown: 16332 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE
+30147/tcp open     unknown
+30239/tcp open     unknown
+30280/tcp open     unknown
+30302/tcp filtered unknown
+30356/tcp open     unknown
+30403/tcp open     unknown
+30570/tcp open     unknown
+30587/tcp filtered unknown
+30596/tcp open     unknown
+30613/tcp filtered unknown
+30621/tcp filtered unknown
+30642/tcp open     unknown
+30652/tcp open     unknown
+30728/tcp open     unknown
+30908/tcp filtered unknown
+30914/tcp open     unknown
+30945/tcp open     unknown
+30959/tcp open     unknown
+31039/tcp open     unknown
+31116/tcp filtered unknown
+31239/tcp open     unknown
+31255/tcp filtered unknown
+31332/tcp open     unknown
+31351/tcp open     unknown
+31439/tcp open     unknown
+31480/tcp filtered unknown
+31484/tcp filtered unknown
+31507/tcp open     unknown
+31562/tcp open     unknown
+31593/tcp open     unknown
+31691/tcp open     unknown
+31762/tcp open     unknown
+31767/tcp open     unknown
+31863/tcp open     unknown
+31910/tcp open     unknown
+31933/tcp open     unknown
+31984/tcp open     unknown
+31990/tcp open     unknown
+32045/tcp open     unknown
+32058/tcp open     unknown
+32169/tcp open     unknown
+32212/tcp filtered unknown
+32278/tcp open     unknown
+32289/tcp open     unknown
+32324/tcp open     unknown
+32469/tcp open     unknown
+32491/tcp open     unknown
+32536/tcp open     unknown
+32615/tcp filtered unknown
+32689/tcp open     unknown
+32750/tcp open     unknown
+32759/tcp open     unknown
+
+# Nmap done at Wed Oct 15 13:03:10 2025 -- 1 IP address (1 host up) scanned in 130.70 seconds

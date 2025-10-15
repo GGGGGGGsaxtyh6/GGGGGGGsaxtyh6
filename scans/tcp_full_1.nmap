@@ -1,0 +1,14 @@
+# Nmap 7.95 scan initiated Wed Oct 15 13:00:59 2025 as: nmap -Pn -n -T4 -p1-16384 -oA /workspace/scans/tcp_full_1 94.237.48.12
+Nmap scan report for 94.237.48.12
+Host is up (0.16s latency).
+Not shown: 16377 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE
+19/tcp    filtered chargen
+22/tcp    open     ssh
+25/tcp    filtered smtp
+111/tcp   open     rpcbind
+4240/tcp  open     vrml-multi-use
+9962/tcp  open     unknown
+10256/tcp open     unknown
+
+# Nmap done at Wed Oct 15 13:02:00 2025 -- 1 IP address (1 host up) scanned in 61.10 seconds

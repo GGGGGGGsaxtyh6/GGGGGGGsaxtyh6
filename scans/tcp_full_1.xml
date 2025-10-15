@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.95 scan initiated Wed Oct 15 13:00:59 2025 as: nmap -Pn -n -T4 -p1-16384 -oA /workspace/scans/tcp_full_1 94.237.48.12 -->
+<nmaprun scanner="nmap" args="nmap -Pn -n -T4 -p1-16384 -oA /workspace/scans/tcp_full_1 94.237.48.12" start="1760533259" startstr="Wed Oct 15 13:00:59 2025" version="7.95" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="16384" services="1-16384"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1760533259" endtime="1760533320"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="94.237.48.12" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="16377">
+<extrareasons reason="conn-refused" count="16377" proto="tcp" ports="1-18,20-21,23-24,26-110,112-4239,4241-9961,9963-10255,10257-16384"/>
+</extraports>
+<port protocol="tcp" portid="19"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="chargen" method="table" conf="3"/></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="25"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="smtp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4240"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="vrml-multi-use" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9962"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="10256"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+</ports>
+<times srtt="156611" rttvar="1129" to="161127"/>
+</host>
+<runstats><finished time="1760533320" timestr="Wed Oct 15 13:02:00 2025" summary="Nmap done at Wed Oct 15 13:02:00 2025; 1 IP address (1 host up) scanned in 61.10 seconds" elapsed="61.10" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
