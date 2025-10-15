@@ -1,0 +1,54 @@
+=== Calculando discrete logs con BSGS para factores medianos ===
+
+Usando factor: 15013023439701145679
+Orden: 15013023439701145678
+Factorizando orden...
+Factores: {2: 1, 54602971: 1, 137474419109: 1}
+
+=== Aplicando Poh lig-Hellman ===
+
+Subgrupo de orden 2:
+  x ≡ 0 (mod 2)
+
+Subgrupo de orden 54602971:
+  Calculando BSGS...
+    BSGS: m = 7,390
+    Tabla construida con 7,390 entradas
+  ✓ x ≡ 25219665 (mod 54602971)
+
+Subgrupo de orden 137474419109 (puede tardar varios minutos):
+  Calculando BSGS...
+    BSGS: m = 370,776
+    Tabla construida con 370,776 entradas
+  ✓ x ≡ 82384873828 (mod 137474419109)
+
+✓✓✓ Discrete log completo calculado! ✓✓✓
+
+Discrete log para p=15013023439701145679:
+  x = 13796706501270260414
+
+=== Calculando para segundo factor ===
+
+Factor: 12017858281002457601
+Factores de orden: {2: 9, 5: 2, 199637503339: 1, 4703: 1}
+
+Subgrupo de orden 4703:
+    BSGS: m = 69
+    Tabla construida con 69 entradas
+  ✓ x ≡ 2031 (mod 4703)
+
+Subgrupo de orden 199637503339 (puede tardar varios minutos):
+    BSGS: m = 446,809
+    Tabla construida con 446,809 entradas
+  ✓ x ≡ 19270425099 (mod 199637503339)
+
+Discrete log parcial para p2=12017858281002457601:
+  x ≡ 650637893806900 (mod 938895178203317)
+
+=== Combinando ambos factores ===
+(state & ~0xffff) ≡ 13604982860189876437154905325726720 (mod 14095655317788782324839458519813926)
+Módulo combinado: 114 bits
+
+=== Buscando estado completo ===
+
+Script terminado

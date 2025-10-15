@@ -1,0 +1,60 @@
+Keystream0 = 263928838896714332657762314348602240455087661491500131260179929152321790693260683004004767933801216877412896467528419672112455669506824987777448696213888416333755744665868795853306879814179767910033263081341240785125410643513418
+Keystream1 = 7500716958005582985508201577146205078774368134456220390802616323312171951781595852608949532619393759348663684985174625019004577610546554994801687569942118260000292201829011312249563036393035204990811392856362919655618219192318839
+
+=== Calculando discrete logs ===
+
+Factor 1/4: 10124460123717732577 (64 bits)
+  Calculando discrete log...
+  Orden del grupo: 10124460123717732576 (64 bits)
+  Factorizando el orden...
+  Factores del orden: {2: 5, 3: 1, 7: 1, 23: 1, 59: 1, 11102550404119: 1}
+  Mayor factor primo: 11102550404119 (44 bits)
+  ✗ Factor primo demasiado grande (11102550404119), saltando
+
+Factor 2/4: 12017858281002457601 (64 bits)
+  Calculando discrete log...
+  Orden del grupo: 12017858281002457600 (64 bits)
+  Factorizando el orden...
+  Factores del orden: {2: 9, 5: 2, 199637503339: 1, 4703: 1}
+  Mayor factor primo: 199637503339 (38 bits)
+  Usando Pohlig-Hellman (factores pequeños)
+    Subgrupo 2^9, saltando por ahora
+    Subgrupo 5^2, saltando por ahora
+    Subgrupo primo 199637503339
+    ✗ Primo demasiado grande, saltando
+    Subgrupo primo 4703
+    ✓ x ≡ 2031 (mod 4703)
+  ✓ Discrete log módulo p: 2031
+
+Factor 3/4: 15013023439701145679 (64 bits)
+  Calculando discrete log...
+  Orden del grupo: 15013023439701145678 (64 bits)
+  Factorizando el orden...
+  Factores del orden: {2: 1, 54602971: 1, 137474419109: 1}
+  Mayor factor primo: 137474419109 (38 bits)
+  Usando Pohlig-Hellman (factores pequeños)
+    Subgrupo primo 2
+    ✓ x ≡ 0 (mod 2)
+    Subgrupo primo 54602971
+    ✓ x ≡ 25219665 (mod 54602971)
+    Subgrupo primo 137474419109
+    ✗ Primo demasiado grande, saltando
+  ✓ Discrete log módulo p: 79822636
+
+Factor 4/4: 17297082179958074003 (64 bits)
+  Calculando discrete log...
+  Orden del grupo: 17297082179958074002 (64 bits)
+  Factorizando el orden...
+  Factores del orden: {2: 1, 41: 1, 210940026584854561: 1}
+  Mayor factor primo: 210940026584854561 (58 bits)
+  ✗ Factor primo demasiado grande (210940026584854561), saltando
+
+=== Resultados ===
+Calculados 2/4 discrete logs
+
+Combinando con CRT...
+Traceback (most recent call last):
+  File "/workspace/solve_final.py", line 149, in <module>
+    state_high_mod_small, combined_mod = crt(moduli, remainders)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: cannot unpack non-iterable NoneType object
